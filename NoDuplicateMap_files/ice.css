@@ -1,0 +1,162 @@
+html .iceAddon .mceExternalToolbar {
+    border: 1px solid #BCBFC4;
+}
+
+html .iceAddon table {
+    background: transparent;
+}
+
+html .iceAddon .mceButton {
+    border: 1px solid transparent;
+}
+
+html .iceAddon .mceSplitButton a.mceAction {
+    border: 1px solid transparent;
+    border-right: 0px;
+}
+
+td.toolbarRibbonContainer {
+    background: #E1E5E8 url(../images/tabs/ice/toolbarBackground.png) bottom left repeat-x;
+    margin: 1px;
+}
+
+td.toolbarRibbonContainer .toolbarBibbonSection {
+    border: 1px solid transparent;
+    margin: 0px 0px 5px 3px;
+	float:left;
+	clear:none;
+}
+
+td.toolbarRibbonContainer table.toolbarControls {
+	float:left;
+	clear:none;
+	font-size: 12px;
+	height:30px;
+	margin: 3px 0px 5px 3px;	
+	font-family: Arial;
+}
+
+td.toolbarRibbonContainer table.toolbarControls .label {
+	font-weight:bold;
+	padding-top:3px;
+}
+
+td.toolbarRibbonContainer table.toolbarControls select {
+	width: 100px;
+}
+
+.loaderImage {
+    opacity: 0.5;
+    position: absolute;;
+    left: 20px;
+    top: 20px;
+    display: block;
+}
+
+.iceElementTab {
+    background: url(../images/tabs/ice/tabLeft.png) left top no-repeat;
+    height: 28px;
+    padding: 0 0 0 10px;
+    position: absolute;
+    z-index: 99;
+}
+
+.iceElementLabelContainer {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.iceElementTab div {
+    background: url(../images/tabs/ice/tabRight.png) right top no-repeat;
+    height: 28px;
+    padding: 0 10px 0 0;
+}
+
+.iceElementTab div div {
+    background: url(../images/tabs/ice/tabMiddle.png) left top repeat-x;
+    height: 22px;
+    font-size: 13px;
+    padding: 6px 10px 0 10px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #dedede;
+    white-space: nowrap;
+}
+
+.iceElementTab div.dialogCloseButton {
+    width: 23px;
+    height: 23px;
+    border: 0px;
+    padding: 0;
+    margin: 0 0 0 0;
+    background: url(../images/dialogs/dialog_close.gif);
+    position: absolute;
+    z-index: 120;
+    cursor: pointer;
+}
+
+.iceElementTab div div.dialogCloseButtonOn {
+    background: url(../images/dialogs/dialog_close_on.gif);
+}
+
+.iceElementTab div div.dialogCloseButtonDown {
+    background: url(../images/dialogs/dialog_close_down.gif);
+}
+
+img.iceElementIcon {
+    display: block;
+    position: absolute;
+    z-index: 100;
+}
+
+div.iceFieldMarker {
+    display: block;
+    position: absolute;
+    z-index: 88;
+    background: transparent;
+    border: 0px;
+    overflow: hidden;
+}
+
+div.fieldMarkerFiller {
+    position: absolute;
+    z-index: 87;
+    left: 0;
+    top: 0;
+}
+
+img.playImage {
+    position: absolute;
+    z-index: 89;
+    opacity: 0.4;
+    left: 2px;
+    top: 2px;
+}
+
+img.playImageOver {
+    opacity: 0.7;
+}
+
+.required {
+    font-size: 9px;
+    color: red;
+}
+
+.iceToolbarButtonsContainer {
+    background: url(../images/layout/ribbon/buttonsGroup.png) left top no-repeat;
+    padding-left: 4px;
+    width: 132px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+
+.iceToolbarButtonsContainer div {
+    background: url(../images/layout/ribbon/buttonsGroup.png) right -86px no-repeat;
+    margin-right: 4px;
+}
+
+.iceToolbarButtonsContainer div div {
+    background: url(../images/layout/ribbon/buttonsGroup.png) left -172px repeat-x;
+    width: 124px;
+    height: 86px;
+}
