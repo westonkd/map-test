@@ -1,0 +1,268 @@
+<html class="dj_gecko dj_contentbox"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<link rel="SHORTCUT ICON" href="http://igxur/urd/client/images/favicon.ico" type="image/x-icon">
+	<title>
+		Ingeniux CMS
+		Preview
+		[x98790] </title>
+	<link rel="STYLESHEET" type="text/css" href="Ingeniux%20CMS%20Preview%20%5Bx98790%5D_files/style.css">
+	<link rel="STYLESHEET" type="text/css" href="Ingeniux%20CMS%20Preview%20%5Bx98790%5D_files/ice.css">
+	<style type="text/css">
+		div.editorContainer .defaultSkin div.mcePlaceHolder
+		{
+			border: solid 2px black;
+			background-color: white;
+			opacity: 0.4;
+		}
+	</style>
+	<script type="text/javascript">
+			djConfig = {
+				isDebug: false,
+				modulePaths: {
+					igx: "../../igx",
+					"igx.cms": "../../igx/cms",
+					"igx.cms.preview": ".././igx/cms/preview",
+					"igx.cms.ice": "../../igx/cms/ice",
+					"igx.cms.ice.widget": "../../igx/cms/ice/widget"
+				},
+				parseOnLoad: false,				
+				locale: "en-us"
+			}
+	</script>
+	<script type="text/javascript" src="Ingeniux%20CMS%20Preview%20%5Bx98790%5D_files/dojo.js"></script>
+	
+	<script type="text/javascript">
+		if (!dojo) {
+			var dojo = dojo13;
+			var dijit = dijit13;
+			var dojox = dojox13;
+		}
+	</script>
+	
+	<script type="text/javascript">	
+	
+		var g_isPopupWindow = true;
+		var g_defaultPreviewUrlBase = "/urd/xml/previewPageClient";
+		var g_customQueryStrings = "pageId=x98790&showControls=true&debug=false";
+		var g_doICE = false ;
+		var g_baseZIndex = 100
+		
+		var interval = null;
+
+	
+
+		
+		function showHideControls() {
+			var previewControls = document.getElementById("previewControls");
+			if(previewControls.style.display == "none")
+				previewControls.style.display = "block";
+			else
+				previewControls.style.display = "none";
+		}
+	
+	</script>
+	<script type="text/javascript" src="Ingeniux%20CMS%20Preview%20%5Bx98790%5D_files/PreviewManager.js"></script>
+</head>
+<body id="previewPage" scroll="no" leftmargin="0" rightmargin="0" topmargin="0" bottommargin="0" class="tundra">
+	<form action="../../../dsspreview/igxdynamicpreview?pageId=x98790&amp;showControls=true&amp;debug=false&amp;Site=None&amp;UserAgent=MSIE&amp;QS=&amp;Form=&amp;Cookies=&amp;SvrVars=&amp;PubTgt=1&amp;XForm=2&amp;Include=true&amp;useCheckedOut=true" attachpoint="externalPreviewPostForm" method="post" target="previewFrame" style="display: none;">
+		<input name="expandedPageXml" attachpoint="expandedXmlInput" value="undefined" id="expandedPageXml" type="hidden">
+		<!-- test code -->
+		<input name="userAgentEmulated" attachpoint="userAgentEmulatedInput" value="" type="hidden">
+	</form>
+	<table id="table" tabindex="0" height="100%" border="0" cellpadding="0" cellspacing="0" width="100%">
+		
+<tbody><tr>
+	<td id="previewControls" class="previewControls" attachpoint="toolbar" nowrap="true">
+		<table id="preview" height="100%" border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tbody><tr valign="top">
+				<td class="labelText">
+					Site:
+				</td>
+				<td class="control">
+					
+<select inputattachpoint="siteInput" tabindex="0" name="siteName">
+	<option selected="selected" value="None">Default</option>
+	
+	<option value="YourSite.com">
+		YourSite.com
+	</option>
+	
+</select>
+
+				</td>
+				<td class="labelText">
+					Query Strings:
+				</td>
+				<td class="control">
+					<input class="inputText" tabindex="4" name="objQueryString" inputattachpoint="queryStringInput" type="text">
+				</td>
+				<td>
+					
+<label>
+	<input checked="checked" attachpoint="allPagesCheck" value="Update" tabindex="0" title="Shows pages not marked for publish and expired pages in links and navigations." name="checkInclude" type="checkbox">
+	Show all pages
+</label>
+
+				</td>
+			</tr>
+			<tr valign="top">
+				<td class="labelText">
+					User agent:
+				</td>
+
+				<td class="control">
+					
+<select inputattachpoint="userAgentInput" tabindex="0" name="userAgentName">
+	
+	<option selected="selected" value="MSIE">
+		MSIE
+	</option>
+	
+	<option value="Firefox">
+		Firefox
+	</option>
+	
+	<option value="Chrome">
+		Chrome
+	</option>
+	
+	<option value="iPhone">
+		iPhone
+	</option>
+	
+	<option value="Safari">
+		Safari
+	</option>
+	
+	<option value="Android">
+		Android
+	</option>
+	
+	<option value="BlackBerry">
+		BlackBerry
+	</option>
+	
+	<option value="Mobile_Device_Emulation">&lt;Emulate Mobile Device&gt;</option>
+	<option value="None">&lt;None&gt;</option>
+</select>
+
+					&nbsp;
+					
+				</td>
+				<td class="labelText">
+					Form:
+				</td>
+				<td class="control">
+					<input inputattachpoint="formInput" class="inputText" tabindex="5" name="objForm" type="text">
+				</td>
+				<td>
+					<span>&nbsp;</span>
+				</td>
+			</tr>
+			<tr valign="top">
+				<td class="labelText">
+					<span style="display: none;" attachpoint="pubTgtDropdownLabel">
+						Publishing Target:</span>
+				</td>
+				<td class="control">
+					
+<select style="display: none;" inputattachpoint="putTargetInput" tabindex="0" name="pubTargetId">
+	
+	<option selected="selected" value="1" useexternalpreviewurl="true" externalpreviewurl="/urd/DssPreview/IGXDynamicPreview" icefieldmarkupupdateurl="/urd/DssPreview/IGXDTICEUpdate" dynamicpreview="true">
+		urdTest</option>
+	
+</select>
+
+				</td>
+				<td class="labelText">
+					Cookies:
+				</td>
+				<td class="control">
+					<input inputattachpoint="cookiesInput" class="inputText" tabindex="6" name="objCookies" type="text">
+				</td>
+				<td>
+					<span>&nbsp;</span>
+				</td>
+			</tr>
+			<tr valign="top">
+				<td class="labelText">
+					Options:
+				</td>
+				<td class="control">
+					<select inputattachpoint="transformOptionsInput" tabindex="3" name="transformOptions">
+						
+						<option selected="selected" value="2">
+							Force HTML Transform</option>
+						<!--<option value="3">Transform with SSPI</option>-->
+						<option value="4">
+							Transform without Stylesheet</option>
+					</select>
+				</td>
+				<td class="labelText">
+					Server Variables:
+				</td>
+				<td class="control">
+					<input inputattachpoint="serverVariablesInput" class="inputText" tabindex="6" name="objServerVariables" type="text">
+				</td>
+				<td>
+					<span class="button" unselectable="on">
+						<ul unselectable="on">
+							<li><a href="#" onclick="return false;" attachpoint="updateButton"><span unselectable="on">
+								Update</span></a>
+							</li>
+						</ul>
+					</span>
+				</td>
+			</tr>
+		</tbody></table>
+	</td>
+</tr>
+
+		
+		<tr>
+			<td style="background-color: #858585;" attachpoint="viewCell" align="center" height="100%" valign="middle" width="100%">
+				<div attachpoint="sizableContainer" style="width:100%;height:100%;overflow:auto;">
+					<table attachpoint="frameContainer" style="width: 100%;
+						height: 100%" border="0" cellpadding="0" cellspacing="0">
+						<tbody><tr valign="bottom">
+							<td align="right">
+								<img attachpoint="imgTL" src="Ingeniux%20CMS%20Preview%20%5Bx98790%5D_files/tl.png" style="display: none;">
+							</td>
+							<td attachpoint="frameContainerMidCell" width="100%">
+								<img attachpoint="imgT" src="Ingeniux%20CMS%20Preview%20%5Bx98790%5D_files/t.png" style="display: none;">
+							</td>
+							<td align="left">
+								<img attachpoint="imgTR" src="Ingeniux%20CMS%20Preview%20%5Bx98790%5D_files/tr.png" style="display: none;">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img attachpoint="imgL" src="Ingeniux%20CMS%20Preview%20%5Bx98790%5D_files/l.png" style="display: none;">
+							</td>
+							<td attachpoint="frameCell" height="100%">
+								<!-- strange IE iframe behavior requires return statement in order for "onload" to work -->
+								<iframe src="Ingeniux%20CMS%20Preview%20%5Bx98790%5D_files/blank.htm" scrolling="auto" hspace="0" marginheight="0" style="border: 0px; border-collapse: collapse;" marginwidth="0" vspace="0" id="previewFrame" attachpoint="previewFrame" name="previewFrame" tabindex="0" frameborder="0" height="100%" width="100%"></iframe>
+							</td>
+							<td>
+								<img attachpoint="imgR" src="Ingeniux%20CMS%20Preview%20%5Bx98790%5D_files/r.png" style="display: none;">
+							</td>
+						</tr>
+						<tr valign="top">
+							<td align="right">
+								<img attachpoint="imgBL" src="Ingeniux%20CMS%20Preview%20%5Bx98790%5D_files/bl.png" style="display: none;">
+							</td>
+							<td attachpoint="frameContainerMidCell">
+								<img attachpoint="imgB" src="Ingeniux%20CMS%20Preview%20%5Bx98790%5D_files/b.png" style="display: none;">
+							</td>
+							<td align="left">
+								<img attachpoint="imgBR" src="Ingeniux%20CMS%20Preview%20%5Bx98790%5D_files/br.png" style="display: none;">
+							</td>
+						</tr>
+					</tbody></table>
+				</div>
+			</td>
+		</tr>
+	</tbody></table>
+
+
+</body></html>
