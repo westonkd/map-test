@@ -1,0 +1,3915 @@
+/* Import Styles for Dojo 1.3 */@import "../js/dojo13/dojo/resources/dojo.css";
+@import "../js/dojo13/dojox/grid/resources/Grid.css";
+@import "../js/dojo13/dojox/grid/resources/tundraGrid.css";
+@import "../js/dojo13/dijit/themes/tundra/tundra.css";
+/* CMS Client CSS Styles */
+html, body {
+    width: 100%; /* make the body expand to fill the visible window */
+    height: 100%;
+    overflow: hidden; /* erase window level scrollbars */
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12px;
+}
+
+/* Splash Screen "cover" */
+.cover table {
+    width: 100%;
+    height: 100%;
+    border: 0px;
+}
+
+.cover td {
+    vertical-align: middle;
+    publishItemTitle text-align:center;
+}
+
+.cover div.splashScreen {
+    position: relative;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 300px;
+    border: 1px solid black;
+}
+
+.cover div.splashScreenProgressBar {
+    width: 500px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Main Layout/Split Container */
+.main {
+    background-color: #858585;
+    overflow: auto;
+    border: 1px solid #5A5A5A;
+}
+
+.loadingNotifier {
+    color: white;
+    display: none;
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.progressBar {
+    display: none;
+}
+
+/*all selector and edit form tabs*/
+.tabListItem {
+    overflow: auto;
+    background-color: #FFFFFF;
+}
+
+.tabListItemResizing {
+    overflow: hidden;
+}
+
+.tabListItemOverflow {
+    overflow: auto;
+}
+
+/*Toolbar widget*/
+.toolbarTop {
+    background: url("../images/layout/toolbar-background.png") left top repeat-x;
+    width: 100%;
+    height: 60px;
+}
+
+.toolbarTopHilite {
+    background: url("../images/layout/toolbar-background-hilite.png") left top repeat-x;
+}
+
+.toolbarTop .welcome {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-shadow: 2px 2px 2px #3d3d3d;
+    margin-top: 8px;
+    margin-left: 40px;
+    float: left;
+}
+
+.toolbar {
+    height: 44px;
+    margin-bottom: 2px;
+    padding-bottom: 2px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+
+.toolbarRow {
+    clear: both;
+    margin-right: 10px;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    height: 27px;
+}
+
+html .toolbarButton, html .dojoDndAvatarItem .toolbarButton, html .cmsToolbox .cmsToolboxBody .toolbarButton, html .cmsToolbox .cmsToolboxBody .toolbarButtonDepressed {
+    background-color: Transparent;
+    border: 0 none;
+    cursor: default;
+    float: left;
+    margin: 1px;
+    padding: 4px 5px;
+    position: relative;
+}
+
+html .toolbarButtonHover {
+    background-color: Transparent;
+    border: 1px outset white;
+    cursor: pointer;
+    float: left;
+    margin: 1px 0px;
+    padding: 3px 5px;
+    position: relative;
+}
+
+html .toolbarButtonDepressed {
+    background-color: Transparent;
+    border: 1px inset white;
+    cursor: pointer;
+    float: left;
+    margin: 1px 0px;
+    padding: 3px 5px;
+    position: relative;
+}
+
+html .cmsToolbox .cmsToolboxBody .toolbarButtonHover {
+    background-color: Transparent;
+    border: 1px outset white;
+    cursor: pointer;
+    float: left;
+    margin: 1px 0px;
+    padding: 3px 5px;
+    position: relative;
+}
+
+html .toolbarRow .dojoDndItemAnchor, html .toolbarRow .dojoDndItemSelected, html .dojoDndAvatarItem .dojoDndItemAnchor, html .dojoDndAvatarItem .dojoDndItemSelected, html .cmsToolbox .cmsToolboxBody .dojoDndItemAnchor, html .cmsToolbox .cmsToolboxBody .dojoDndItemSelected {
+    background-color: #B2BBD0;
+    border: 1px solid #0A246A;
+    margin: 0;
+    margin: 1px 0px;
+    padding: 3px 5px;
+    display: block;
+    float: left;
+}
+
+.toolbarSpacer {
+    float: left;
+    margin: 6px 2px 5px 2px;
+    clear: none;
+    display: block;
+}
+
+html .toggleButton .toolbarButtonContents {
+    padding-top: 3px;
+    cursor: pointer;
+}
+
+html .hiliteButton {
+    background: url(../images/tabs/ice/buttonBG.png) center top no-repeat;
+}
+
+html .dojoSplitContainerSizerH, html .dojoSplitContainerSizerV {
+    border: 0px;
+    background-color: transparent;
+}
+
+html .toolbarRow .toolbarButtonCaption, html .dojoDndAvatarItem .toolbarButtonCaption, html .cmsToolbox .cmsToolboxBody .toolbarButtonCaption {
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+html .toolbarRow .toolbarButtonCaptionHorizontal, html .dojoDndAvatarItem .toolbarButtonCaptionHorizontal, html .cmsToolbox .cmsToolboxBody .toolbarButtonCaptionHorizontal, html .iceButtonsContainer .toolbarButtonCaptionHorizontal {
+    float: left;
+    clear: none;
+    margin: 2px 0 0 4px;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+html .iceButtonsContainer .toolbarButtonCaptionHorizontal {
+    font-size: 12px;
+}
+
+html .toolbarRow .imageHorizontal, html .dojoDndAvatarItem .imageHorizontal, html .cmsToolbox .cmsToolboxBody .imageHorizontal, html .iceButtonsContainer .imageHorizontal {
+    float: left;
+}
+
+html .toolbarRow .arrowHorizontal, html .dojoDndAvatarItem .arrowHorizontal, html .cmsToolbox .cmsToolboxBody .arrowHorizontal {
+    float: left;
+    margin-top: 7px;
+}
+
+html .toolbarRow .toolbarButtonCaptionDisabled .toolbarButtonCaption {
+    color: #b0b0b0;
+}
+
+/* ListDisplay List Styles*/
+.listDisplay {
+    font-family: Lucida Grande, Verdana;
+    font-size: 11px;
+    border: 1px solid #a8a8a8;
+    overflow: auto;
+    cursor: default;
+    width: 100%;
+}
+
+.listDisplay td, .listDisplay th {
+    padding: 2px;
+    font-weight: normal;
+    font-size: 11px;
+}
+
+.listDisplay thead td, .listDisplay thead th {
+    background-image: url(../images/ft-head.gif);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.listDisplay thead td.selectedUp, .listDisplay thead th.selectedUp {
+    background-image: url(../images/ft-headup.gif);
+}
+
+.listDisplay thead td.selectedDown, .listDisplay thead th.selectedDown {
+    background-image: url(../images/ft-headdown.gif);
+}
+
+.listDisplay tbody tr td {
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+.listDisplay tbody tr.alt td {
+    background: #e3edfa;
+}
+
+.listDisplay tbody tr.selected td {
+    background-color: #B7CDEE;
+}
+
+.listDisplay tbody tr:hover td {
+    background: #d9e6fa;
+}
+
+.listDisplay tbody tr.selected:hover td {
+    background-color: #d9e6fa;
+}
+
+.listDisplay tbody tr.disabledRow td {
+    background: #c2c4c8;
+}
+
+.listDisplay tbody tr.disabledRow:hover td {
+    background-color: #c2c4c8;
+}
+
+.listDisplay .disabledCell {
+    background-color: #c2c4c8;
+}
+
+html div.toolBarDivider {
+    float: left;
+    clear: none;
+    margin: 7px 6px 1px 6px;
+    border: 0px;
+    border-left: 2px groove #afafaf;
+    height: 30px;
+    width: 1px;
+}
+
+/* Edit Form */
+.editableForm {
+    background-color: #ECEFF4;
+}
+
+.noneditableForm {
+    background-color: #DFE1E5;
+}
+
+/* Text inputs */
+input.input {
+    height: 18px;
+    width: 490px;
+    border: none;
+    padding: 3px 12px;
+    float: left;
+    outline: none;
+    background: url(../i/input.gif) no-repeat;
+}
+
+textarea.textarea {
+    height: 18px;
+    line-height: 18px;
+    width: 490px;
+    border: none 0px White;
+    margin: -3px 12px -1px 12px;
+    float: left;
+    outline: none;
+    font-family: Arial;
+}
+
+/* Tab Containers */
+/* The "html" selector is required for most of these, in order to override the default Dojo styles. */
+html .dojoTabPaneWrapper {
+    background: url("../images/tabs/tab-background.gif") repeat-x top;
+    border: 1px solid #5A5A5A;
+    padding-top: 4px;
+    margin-top: 5px;
+}
+
+div#selectorTabContainer div.dojoTabPaneWrapper, div#editFormTabContainer div.dojoTabPaneWrapper {
+    border-left: 1px solid #5a5a5a;
+    border-bottom: 1px solid #5a5a5a;
+    border-top: none;
+    border-right: 1px solid #5a5a5a;
+}
+
+html .dojoTab {
+    background: url("../images/tabs/tab_left.gif") no-repeat left top;
+    padding-left: 6px;
+    border-bottom: 1px solid #828282;
+}
+
+html .dojoTab.current {
+    background-position: 0 -100px;
+    border-bottom: 0;
+    padding-bottom: 1px;
+}
+
+html .dojoTab div {
+    background: url("../images/tabs/tab_right.gif?75") no-repeat right top;
+    font-family: Arial;
+    font-size: 12px;
+}
+
+html .dojoTab.current div {
+    background-position: 100% -100px;
+    padding-bottom: 6px;
+    margin-bottom: -2px;
+}
+
+html .dojoTabLabels-top {
+    margin-bottom: -6px;
+}
+
+html .dojoTab .pinButton {
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+/*
+ html .dojoTabLabels-top {
+ margin-bottom: -6px;
+ background: #254F97;
+ }
+ */
+/* -------------------------------------------------------------------------------------------------------
+ IGX Context menu and toolbar combo button pop up menu styling overrides
+ -------------------------------------------------------------------------------------------------------*/
+html .dojoPopupMenu2 {
+    position: absolute;
+    background: #CFD0D4 url(../images/icons/elementblocks/1.gif) repeat-x bottom left !important;
+    padding: 3px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    border-width: 2px;
+    border-color: #DFE1E7;
+    /*
+     border-top-style: groove;
+     border-left-style: groove;
+     border-bottom-style: outset;
+     border-right-style: outset;
+     */
+}
+
+html .dojoMenuSeparator2Top {
+    height: 50%;
+    border-bottom: 1px groove #808080;
+    margin: 0px 2px;
+    font-size: 1px;
+    padding-top: 2px;
+}
+
+html .dojoMenuSeparator2Bottom {
+    height: 50%;
+    border-top: 1px solid #FFFFFF;
+    margin: 0px 2px;
+    font-size: 1px;
+    padding-bottom: 2px;
+}
+
+html .dojoMenuItem2 {
+    white-space: nowrap;
+    font: menu;
+    font-family: Arial, Sans-Serif;
+    font-size: 11px;
+    margin: 0;
+    height: 19px;
+}
+
+html .dojoMenuItem2Label {
+    position: relative;
+    vertical-align: middle;
+}
+
+html .dojoMenuItem2Disabled .dojoMenuItem2Label, .dojoMenuItem2Disabled .dojoMenuItem2Accel {
+    color: #808080;
+}
+
+html .dojoMenuItem2Hover {
+    background-color: #0A246A;
+    color: #FFFFFF;
+    cursor: hand;
+}
+
+html .dojoComboBoxOptions {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    /* font-size: 0.7em; */
+    background-color: white;
+    border: 1px solid #afafaf;
+    position: absolute;
+    z-index: 1000;
+    overflow: auto;
+    cursor: default;
+}
+
+.menuItemSelected {
+    background: #5A5A5A;
+    color: white;
+}
+
+/* -------------------------------------------------------------------------------------------------------
+ DND
+ --------------------------------------------------------------------------------------------------------*/
+html .treeNodeDropTarget {
+    margin: 1px;
+    border: 1px solid;
+}
+
+html .treeNodeDropTargetOn {
+    margin: 0px;
+    border: 2px solid black;
+}
+
+/* -------------------------------------------------------------------------------------------------------
+ Dojo Dialogs
+ --------------------------------------------------------------------------------------------------------*/
+.dojoDialog {
+    font-size: .8em;
+    text-align: left;
+}
+
+.dojoDialog img.dialoglogo, .dojoDialog span.dialogTitleText {
+    float: left;
+    clear: none;
+    margin-top: 2px;
+}
+
+.dojoDialog span.dialogTitleText {
+    margin-left: 5px;
+    margin-top: 4px;
+}
+
+.dojoDialog .contentWrapper {
+    width: 100%;
+    background: url(../images/dialogs/shadow-left-right.png) repeat-y;
+}
+
+.dojoDialog .content {
+    width: 100%;
+    background: url(../images/dialogs/shadow-left-right.png) repeat-y right top;
+}
+
+.dojoDialog .title {
+    width: 100%;
+    background: url(../images/dialogs/tl-corner.png) no-repeat left top;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: move;
+}
+
+.dojoDialog .title div {
+    background: url(../images/dialogs/tr-corner.png) no-repeat right top;
+    padding: 0px 18px 0px 15px;
+}
+
+.dojoDialog .title div div {
+    background: url(../images/dialogs/title-bg.png) repeat-x;
+    padding: 8px 0px 6px 0px;
+    height: 20px;
+}
+
+.dojoDialog .title div div img {
+    float: left;
+    clear: none;
+    margin-top: 2px;
+}
+
+.dojoDialog .title div div span {
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    float: left;
+    clear: none;
+    margin-left: 4px;
+    margin-top: 2px;
+}
+
+.dojoDialog .title div div div {
+    background: none;
+}
+
+.dojoDialog .title div div.dialogCloseButton {
+    width: 23px;
+    height: 23px;
+    border: 0px;
+    padding: 0;
+    margin: 0 0 0 0;
+    background: url(../images/dialogs/dialog_close.gif);
+    float: right;
+    clear: right;
+    cursor: pointer;
+}
+
+.dojoDialog .title div div.dialogCloseButtonOn {
+    background: url(../images/dialogs/dialog_close_on.gif);
+}
+
+.dojoDialog .title div div.dialogCloseButtonDown {
+    background: url(../images/dialogs/dialog_close_down.gif);
+}
+
+.dojoDialog .body {
+    font-size: 1em;
+    background: #cbcdd1 url(../images/dialogs/body-bg.png) repeat-x;
+    margin: 0px 3px 0px 3px;
+    padding: 20px 15px 0px 15px;
+    border-top: solid 1px #8e8e8e;
+}
+
+.dojoDialog .message {
+    border-bottom: 1px solid #b4b5b8;
+    padding-bottom: 5px;
+}
+
+.dojoDialog .toolbar {
+    height: 48px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.dojoDialog .footer {
+    clear: both;
+    height: 14px;
+    background: url(../images/dialogs/bl-corner.png) no-repeat left top;
+}
+
+.dojoDialog .footer div {
+    height: 14px;
+    background: url(../images/dialogs/br-corner.png) no-repeat right top;
+    padding: 0px 14px 0px 14px;
+}
+
+.dojoDialog .footer div div {
+    background: url(../images/dialogs/footer-bg.png) repeat-x;
+    font-size: 1px;
+}
+
+.dojoDialog .buttons {
+    padding: 8px 0px 0px 0px;
+    border-top: 1px solid #e2e4e5;
+    clear: both;
+    text-align: right;
+}
+
+.dojoDialog .buttons input {
+    margin: 0px 0px 0px 8px;
+}
+
+.dialogMovingDummy {
+    background-color: black;
+    cursor: move;
+    position: absolute;
+    z-index: 999;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+}
+
+/* Conditional style for IE only (using the "* html" identifier will only match in IE) */ * html .dojoDialog .body {
+    background-color: #c5c7cb;
+}
+
+.aboutIngeniux {
+    width: 460px;
+    font-family: Arial, Verdana, Sans-Serif;
+    font-size: .7em;
+}
+
+.aboutIngeniux .logo {
+    float: left;
+    width: 128px;
+    margin: 0px 20px 0px 0px;
+}
+
+.aboutIngeniux .copy {
+    float: left;
+    width: 270px;
+}
+
+.aboutIngeniux .warning {
+    font-size: .9em;
+    color: #666;
+}
+
+.emptyDialog {
+    width: 300px;
+}
+
+.loginDialog {
+    width: 300px;
+}
+
+.loginDialog label {
+    float: left;
+    clear: left;
+    width: 70px;
+    margin-top: 4px;
+}
+
+.loginDialog .userInput {
+    float: left;
+    width: 180px;
+    margin-top: 4px;
+}
+
+.changePasswordDialog {
+    width: 400px;
+}
+
+.publishTargetsDialog {
+    width: 400px;
+}
+
+.publishTargetsDialog .listDisplay {
+    background-color: #ffffff;
+    width: 362px;
+}
+
+.fileBrowser {
+    width: 834px;
+}
+
+.fileBrowser .leftPanel {
+    margin: 1px;
+    float: left;
+    clear: right;
+    background-color: white;
+    width: 196px;
+    border: 1px solid gray;
+    padding: 4px;
+    overflow: auto;
+}
+
+.fileBrowser .dojoSplitContainerSizerH, .fileBrowser .dojoSplitContainerSizerV {
+    border: 0px;
+    background-color: transparent;
+}
+
+.fileBrowser .toolbarButton {
+    float: right;
+}
+
+.fileBrowser .toolbarButtonHover {
+    float: right;
+}
+
+.fileBrowser .toolbarButtonDepressed {
+    float: right;
+}
+
+.ADImport {
+    width: 834px;
+}
+
+.ImageProcessingDialog {
+    width: 834px;
+}
+
+.componentPicker {
+    width: 750px;
+}
+
+.componentPicker .filterInput select, html .componentPicker .filterInput input {
+    display: block;
+    width: 225px;
+}
+
+.componentPicker .componentSelection {
+    width: 700px;
+    clear: both;
+    padding-top: 5px;
+}
+
+.componentPicker .componentViewer {
+    width: 700px;
+    height: 200px;
+    clear: both;
+    overflow: auto;
+}
+
+.componentPicker .buttons input.buttonAdvanced {
+    float: left;
+}
+
+.componentPicker .listDisplay {
+    background-color: white;
+}
+
+.componentPicker .listDisabled {
+    background-color: #c5c7cb;
+}
+
+.selectUser {
+    width: 350px;
+}
+
+.selectUser .commentsDiv {
+    margin-top: 4px;
+}
+
+.selectUser select {
+    width: 300px;
+}
+
+.selectUser select .activeUser {
+    color: blue;
+}
+
+.selectUser select .currentUser {
+    font-weight: bold;
+}
+
+.newPage {
+    width: 390px;
+}
+
+.newPage .newPageLabel {
+    float: left;
+    margin: 4px 0px 0px 4px;
+}
+
+.newPage .newPageValue {
+    float: left;
+    margin: 4px 0px 0px 4px;
+}
+
+.newPage select {
+    width: 218px;
+}
+
+.newPage input.pageName {
+    width: 245px;
+    margin: 4px 0px 0px 4px;
+}
+
+.newPage .error {
+    float: left;
+    clear: left;
+}
+
+.rename {
+    width: 350px;
+}
+
+.rename #newNameNode {
+    float: left;
+    width: 260px;
+    margin: 0px 4px 4px 4px;
+}
+
+.rename .label {
+    float: left;
+    margin: 0px 4px 0px 4px;
+    font-size: 12px;
+}
+
+.localeSelect {
+    width: 460px;
+}
+
+.categoryPicker .label {
+    font-family: Arial;
+    font-size: 12px;
+}
+
+.advancePage {
+    width: 350px;
+}
+
+.advancePage .workflowLabel, .advancePage .workflowValue {
+    float: left;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.advancePage .workflowLabel {
+    clear: left;
+    width: 120px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.advancePage .workflowValue {
+    width: 140px;
+}
+
+.advancePage .transitions {
+    width: 300px;
+    margin-bottom: 5px;
+}
+
+.advancePage .errorMessage {
+    font-weight: bold;
+    font-size: larger;
+    margin-top: 10px;
+}
+
+.advancePage .groupLabel {
+    width: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.advancePage .dS {
+    margin-top: 4px;
+}
+
+.advancePage .workflowHistoryButton {
+    float: right;
+}
+
+.urlBrowser {
+    width: 640px;
+    font-family: Arial, Verdana, Sans-Serif;
+}
+
+.urlBrowser .urlBrowserLabel {
+    float: left;
+    margin-right: 5px;
+}
+
+.urlBrowser .urlInput {
+    float: left;
+    width: 500px;
+}
+
+.urlBrowser .browser {
+    clear: both;
+    width: 600px;
+    height: 500px;
+    margin-top: 5px;
+    background-color: white;
+}
+
+.selectPublishingProfileDialog {
+    width: 834px;
+}
+
+.elementProperties {
+    width: 330px;
+}
+
+.elementProperties .subtitle {
+    font-weight: bold;
+    font-size: 10pt;
+    position: relative;
+    top: -4px;
+}
+
+.elementProperties .spanName {
+    float: left;
+    padding-left: 2px;
+    height: 20px;
+    color: windowtext;
+    width: 100px;
+    overflow: hidden;
+    border-right: 1px solid buttonshadow;
+}
+
+.elementProperties .spanValue {
+    float: left;
+    padding-left: 2px;
+    height: 20px;
+    color: windowtext;
+    width: 172px;
+    overflow: hidden;
+    border: 0px;
+}
+
+.elementProperties .selValue {
+    height: 100%;
+    color: windowtext;
+    width: 172px;
+    overflow: hidden;
+    border: 0px;
+    position: relative;
+    left: -4px;
+}
+
+.elementProperties .rowDiv {
+    background: window;
+    border: 1px solid buttonshadow;
+    height: 20px;
+    overflow: hidden;
+}
+
+.elementProperties .spanHighlight {
+    background: highlight;
+    color: highlighttext;
+}
+
+.elementProperties .tableTitle {
+    font-weight: bold;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.elementProperties textarea.value {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 11px;
+    width: 100%;
+    border: 0px;
+}
+
+.elementProperties .spanHighlight textarea.value {
+    background: highlight;
+    color: highlighttext;
+}
+
+.externalDialog {
+    width: 330px;
+}
+
+.externalDialog iframe {
+    width: 290px;
+    height: 364px;
+}
+
+.multiselectDialog {
+    width: 800px;
+}
+
+.multiselectDialog .subtitle {
+    font-weight: bold;
+    font-size: 10pt;
+    position: relative;
+    top: -4px;
+}
+
+.multiselectDialog .filterInput {
+    float: left;
+    /*font-size: 10px;*/
+    border: 1px solid gray;
+    width: 184px;
+}
+
+.multiselectDialog .pageInput {
+    float: left;
+    font-size: 8pt;
+    margin: 0px 0px 0px 5px;
+}
+
+.multiselectDialog .pageInput input {
+    border: 1px gray solid;
+    height: 20px;
+    text-align: center;
+    width: 20px
+}
+
+.multiselectDialog .listing, .fileBrowser .listing {
+    background: white;
+    margin: 1px;
+    border: 1px solid gray;
+    width: 350px;
+    height: 350px;
+}
+
+.multiselectDialog .listingOn {
+    margin: 0px;
+    border: 2px solid black;
+}
+
+.sendMail {
+    width: 520px;
+}
+
+.sendMail .body {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 9pt !important;
+}
+
+.sendMail .mailSubject {
+    width: 400px;
+}
+
+.sendMail .mailBody {
+    width: 457px;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 9pt;
+}
+
+.sendMail .addressBook {
+    float: left;
+    width: 200px;
+    height: 150px;
+}
+
+.sendMail .selectedField {
+    width: 200px;
+    height: 45px;
+}
+
+.sendMail .addressBook .idle, .sendMail .selectedField .idle {
+    padding: 2px 4px;
+}
+
+.sendMail .addressBook .selected, .sendMail .selectedField .selected {
+    padding: 2px 4px;
+}
+
+.sendMail input.mailButton {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 9pt;
+    padding: 2px 0px;
+    margin: 15px 5px;
+    width: 55px;
+    vertical-align: top;
+}
+
+.selectionBox .groupItem {
+    font-weight: bold;
+}
+
+.pagePropertiesDialog {
+    width: 790px;
+}
+
+.pagePropertiesDialogDE {
+    width: 840px;
+}
+
+.pagePropertiesDialogFR {
+    width: 830px;
+}
+
+.pagePropertiesDialogES {
+    width: 845px;
+}
+
+.pagePropertiesDialog fieldset {
+    padding: 5px;
+    margin: 0 5px 0 5px;
+    border: 2px groove white;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.pagePropertiesDialog fieldset legend {
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 3px;
+}
+
+.pagePropertiesDialog .noItemsMessage {
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 30px;
+    margin-left: 20px;
+}
+
+.markforPublishDialog {
+    width: 700px;
+}
+
+.markforPublishDialog .message {
+    width: 650px;
+}
+
+.confirmDialog {
+    width: 425px;
+}
+
+.userManagerSettings {
+    width: 425px;
+}
+
+.userManagerSettings .message {
+    width: 385px;
+}
+
+.categorizeDialog {
+    width: 540px;
+}
+
+.siteStatusDialog {
+    width: 425px;
+}
+
+.siteStatusDialog .description {
+    font-weight: bold;
+    text-shadow: 1px 1px 1px white;
+    margin-bottom: 4px;
+}
+
+.siteStatusDialog .messages {
+    height: 200px;
+    overflow-y: auto;;
+    overflow-x: hidden;
+    border: 2px groove white;
+}
+
+.siteStatusDialog .messages .entry {
+    padding-left: 24px;
+    margin-bottom: 5px;
+}
+
+.alertDialog {
+    width: 425px;
+}
+
+.selectUsersGroupsDialog {
+    width: 500px;
+}
+
+.selectMobileDeviceDialog {
+	width: 600px;
+	font-size: 11px;
+}
+
+/* -------------------------------------------------------------------------------------------------------
+ Selection Boxes
+ --------------------------------------------------------------------------------------------------------*/
+.selectionBox {
+    clear: both;
+    border: gray 1px solid;
+    background-color: white;
+    margin: 5px 0px 5px 0px;
+    text-align: left;
+    overflow: auto;
+    -moz-user-select: none;
+}
+
+.selectionBox .readOnly {
+    background-color: buttonface;
+}
+
+.selectionBox .selectionBoxItemIdle {
+    background-color: Transparent;
+    color: Black;
+    padding: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.selectionBox .selectionBoxItemSelected {
+    background-color: #000099;
+    color: white;
+    padding: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.selectionBox .disabledChoices {
+    color: gray;
+    cursor: arrow;
+}
+
+/* -------------------------------------------------------------------------------------------------------
+ Tree Styling
+ --------------------------------------------------------------------------------------------------------*/
+/* Replace Dojo TreeV3's use of CSS System Colors with hex colors that replicate the system
+ color defaults (white text/blue background)*/
+html .TreeNodeEmphasized {
+    background-color: #0A246A;
+    color: #FFFFFF;
+    padding-bottom: 3px;
+    padding-right: 1px;
+}
+
+html .TreeNodeAddHilite {
+    background-color: #6179bc;
+    color: #FFFFFF;
+    padding-bottom: 3px;
+    padding-right: 1px;
+}
+
+html .TreeLabelFocused {
+    border: 1px dotted inverted;
+}
+
+html .TreeContent {
+    position: relative;
+}
+
+html .TreeLabel {
+    font-family: Arial;
+    font-size: 12px;
+    text-align: center;
+    white-space: nowrap;
+    height: 18px;
+}
+
+html .treeNodeLocaleRootMark {
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    width: 16px;
+    height: 16px;
+    background: url(../images/icons/localehome.png) left top no-repeat;
+    z-index: 900;
+}
+
+html .treeNodePubTargetRootMark {
+    position: absolute;
+    left: 5px;
+    top: -5px;
+    width: 16px;
+    height: 16px;
+    background: url(../images/icons/pubTargetRoot.png) left top no-repeat;
+    z-index: 901;
+}
+
+html .TreeLabel span img {
+    vertical-align: middle; /* if icon and label are on same line, center them */
+}
+
+html .TreeIcon {
+    white-space: nowrap;
+    height: 11px;
+    margin-top: 1px;
+    margin-right: 2px;
+    cursor: pointer;
+}
+
+/*tree styles for tree node state*/
+.markedForPublish {
+    font-weight: bold;
+}
+
+.readOnlyPage {
+    color: #808080;
+}
+
+/*make the tree scrollable*/
+html .TreeNode, html .TreeNode * {
+    white-space: nowrap;
+}
+
+html .TreeIEExpand {
+    clear: none;
+}
+
+html .TreeIEIconFloat {
+    float: left;
+    clear: none;
+    margin-left: 0px;
+}
+
+html .TreeIEFloat {
+    float: left;
+    clear: right;
+    margin-left: 0px;
+}
+
+html .TreeIENode {
+    clear: left;
+}
+
+html .TreeIEContainer {
+    clear: both;
+}
+
+html .TaxonomyTreeLabel {
+    font-family: Arial;
+    font-size: 12px;
+    text-align: center;
+    line-height: 19px;
+    padding-left: 2px;
+    padding-right: 2px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+html .TaxonomyTreeLabelDisabled {
+    padding-right: 20px;
+    background-image: url(../images/icons/confirm.gif);
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+html .TaxonomyInfoContainer {
+    background-color: white;
+    clear: both;
+    overflow: auto;
+    margin-top: 5px;
+    margin-left: 1px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    height: 360px;
+    border: 1px solid gray
+}
+
+html .TaxonomyInfoContainerReadonly {
+    background-color: buttonface;
+}
+
+html .TaxonomyInfoContainerHilite {
+    border: 2px solid black;
+    margin-top: 4px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+html .TaxonomyAdminContainer {
+    margin: 1px;
+}
+
+html .TaxonomyAdminContainerHilite {
+    border: 1px solid black;
+    margin: 0px;
+}
+
+/* -------------------------------------------------------------------------------------------------------
+ Overview Page Style
+ -------------------------------------------------------------------------------------------------------*/
+.overview {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    border: 0;
+    background-color: #e0e0da;
+    overflow: auto;
+}
+
+.overview_sectionTitle {
+    margin: -1px 0px 0px 12px;
+    font-size: 12px;
+    font-weight: bold;
+    text-shadow: 2px 2px 1px black;
+    color: white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.overview_title {
+    margin: -6px 0px 0px 42px;
+    font-size: 11px;
+    font-weight: bold;
+    text-shadow: 2px 2px 1px black;
+    color: white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Overview design from zangocreative.com */
+.overview_header {
+    background-color: #254F97;
+    /*background-color: #2f6dd0;*/
+    background-image: url("../images/overview/head.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    width: 100%;
+    height: 85px;
+}
+
+.overview_date {
+    font-family: trebuchet, verdana, arial;
+    font-size: 13px;
+    line-height: 14px;
+    color: #eff4f7;
+}
+
+.overview_name {
+    font-family: trebuchet, verdana, arial;
+    font-size: 18px;
+    line-height: 18px;
+    color: #eff4f7;
+}
+
+.overview_body {
+    background-color: #d5d5cf;
+    background-image: url("../images/overview/back.gif");
+    background-repeat: repeat-x;
+    width: 706px;
+}
+
+.overview_body2 {
+    background-color: #d5d5cf;
+    background-image: url("../images/overview/back.gif");
+    background-repeat: repeat-x;
+}
+
+.overview_column {
+    padding-left: 10px;
+    padding-top: 8px;
+    width: 222px;
+}
+
+.overview_columnbody {
+    background-color: #fbfbf9;
+    width: 222px;
+    padding-bottom: 10px;
+    height: 600px;
+}
+
+.overview_cell {
+    background-image: url("../images/overview/cellback.gif");
+    width: 222px;
+    padding-left: 7px;
+    padding-right: 8px;
+}
+
+.overview_intro {
+    font-family: trebuchet, verdana, arial;
+    font-size: 10px;
+    line-height: 18px;
+    font-weight: bold;
+    color: #515151;
+    padding-left: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #e5e5e2;
+}
+
+.overview_cellbottom {
+    background-image: url("../images/overview/cellbtm.gif");
+    width: 222px;
+    height: 20px;
+}
+
+.overview_loading {
+    padding: 10px 10px 10px 10px;
+}
+
+.overview_error {
+    padding: 10px 10px 10px 10px;
+    font-weight: bold;
+    color: Red;
+    display: none;
+}
+
+.overview_dropHighlight {
+    background-color: #ffd77e;
+}
+
+a.overview_link, a.overview_info {
+    font-family: trebuchet, verdana, arial;
+    font-size: 13px;
+    font-weight: normal;
+    color: #000000;
+    background-color: #ffffff;
+    text-decoration: none;
+    overflow: hidden;
+    float: left;
+}
+
+a.overview_info {
+    cursor: default;
+}
+
+a.overview_link div {
+    padding-top: 2px;
+    padding-bottom: 1px;
+    cursor: hand;
+}
+
+a.overview_info div {
+    padding-top: 2px;
+    padding-bottom: 1px;
+}
+
+a.overview_link div.overview_itemName {
+    float: left;
+    margin-left: 4px;
+    overflow: hidden;
+}
+
+a.overview_info div.overview_itemName {
+    float: left;
+    margin-left: 10px;
+    overflow: hidden;
+}
+
+a.overview_link div.overview_details, a.overview_info div.overview_details {
+    font-size: 9px;
+    margin-left: 18px;
+    clear: left;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+div.overview_linkIcon {
+    float: left;
+    margin-left: 10px;
+}
+
+div.overview_itemValue {
+    float: right;
+    margin-right: 5px;
+}
+
+div.overview_CloseBox {
+    float: right;
+}
+
+div.overview_CloseBox img {
+    margin-top: 2px;
+    margin-right: 5px;
+}
+
+a.overview_link:hover, a.overview_link:hover div {
+    background-color: #ffd77e;
+}
+
+a.overview_link img, a.overview_info img {
+    cursor: hand;
+    border-width: 0px;
+}
+
+div.overview_linkBottomBorder {
+    border-bottom: 1px solid #e5e5e2;
+}
+
+div.overview_linkBottomBorder img {
+    height: 1px;
+    width: 207px;
+}
+
+div.newPageInput {
+    clear: both;
+    margin: 5px;
+    border: 1px solid #bababa;
+    padding: 5px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+div .newPageInput div.pcrNameLabel {
+    margin: 2px 2px 3px 2px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+/* -------------------------------------------------------------------------------------------------------
+ DATE ELEMENTS
+ -------------------------------------------------------------------------------------------------------*/
+div.dateInput, input.dateInput {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12px;
+}
+
+input.dateInputReadOnly {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12px;
+    background-color: #DFE1E7;
+}
+
+html .tundra div.dateInputReadOnly, html .tundra div.dijitComboBoxDisabled {
+    background-color: #DFE1E7;
+}
+
+/* -------------------------------------------------------------------------------------------------------
+ ENUMERATION ELEMENTS
+ -------------------------------------------------------------------------------------------------------*/
+select.enumeration {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+/* -------------------------------------------------------------------------------------------------------
+ HTML ELEMENTS
+ -------------------------------------------------------------------------------------------------------*/
+.htmlField {
+    width: 620px;
+    height: 500px;
+}
+
+/* -------------------------------------------------------------------------------------------------------
+ IMAGE ELEMENTS
+ -------------------------------------------------------------------------------------------------------*/
+.imagePropsDetails {
+    margin-top: 10px;
+}
+
+.imageprop_label {
+    width: 60px;
+    float: left;
+    margin-top: 2px;
+}
+
+.imageprop_data {
+    vertical-align: middle;
+    margin-top: 0px;
+    width: 460px;
+}
+
+.imageprop_fieldset {
+    padding: 0px 0px 0px 0px;
+    overflow: hidden;
+    border: 2px groove white;
+    margin-right: 4px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+select.imageEle, select.imageEleReadOnly {
+    font-size: 10pt;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+select.imageEleReadOnly {
+    background-color: #DFE1E7;
+}
+
+/* -------------------------------------------------------------------------------------------------------
+ LABELS
+ -------------------------------------------------------------------------------------------------------*/
+.basicTextLabel {
+    width: 50px;
+    float: left;
+    margin-top: 3px;
+    clear: left;
+    margin-left: 5px;
+}
+
+.longTextLabel {
+    width: 80px;
+    float: left;
+    margin-top: 3px;
+    clear: left;
+    margin-left: 5px;
+}
+
+.freeTextLabel {
+    float: left;
+    margin-top: 3px;
+    clear: left;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* -------------------------------------------------------------------------------------------------------
+ TEXTBOX INPUTS
+ -------------------------------------------------------------------------------------------------------*/
+textarea.basic, input.basic, div.basic {
+    background-color: white;
+    overflow: hidden;
+    line-height: 14px;
+    margin: 0px 0px 0px 2px;
+    padding: 1px 0px 1px 2px;
+    font-size: 12px;
+    font-family: Verdana, Arial, sans-serif;
+    text-align: left;
+    border: solid 1px gray;
+}
+
+.mceItemHiddenSpellWord {
+    background: url("../editor/tinymce/jscripts/tiny_mce/plugins/spellchecker/img/wline.gif") repeat-x scroll left bottom transparent;
+    cursor: default;
+}
+
+/* -------------------------------------------------------------------------------------------------------
+ DISABLED INPUTS
+ -------------------------------------------------------------------------------------------------------*/
+textarea.readOnly, select.readOnly, div.droptext.readonly, .htmlField.readOnly, input.readOnly {
+    background-color: #DFE1E7;
+}
+
+.htmlfield.readOnly {
+    overflow: auto;
+    margin: 0px 0px 0px 2px;
+    padding: 1px 0px 1px 2px;
+    font-size: 12px;
+    font-family: Verdana, Arial, sans-serif;
+    text-align: left;
+    border: 1px solid gray;
+}
+
+/* -------------------------------------------------------------------------------------------------------
+ STANDARD COMPONENT ELEMENTS
+ ------------------------------------------------------------------------------------------------------- */
+span.compStrError {
+    color: red;
+    font-weight: bold;
+}
+
+/* used when dragging and dropping on components */
+.droptext {
+    margin: 2px;
+    overflow: visible;
+    width: 100%;
+    padding: 2px;
+    font-size: 12px;
+    font-family: Verdana, Arial, sans-serif;
+    text-align: left;
+    background-color: white;
+    height: 14px;
+    border: 1px solid gray;
+}
+
+.dropAreaHighlight {
+    margin: 0px;
+    border: 3px solid orange;
+}
+
+.imageCompInner {
+    margin: 5px;
+}
+
+.imageCompInner td {
+    padding: 5px;
+}
+
+/* -------------------------------------------------------------------------------------------------------
+ NAVIGATION ELEMENTS
+ -------------------------------------------------------------------------------------------------------*/
+.navPropsDetails {
+    margin-top: 10px;
+    float: left;
+}
+
+.linkSetPropsDetails {
+    margin: 5px 0 5px 0;
+    padding: 5px 0 5px 0;
+    float: left;
+    border: 1px groove gray;
+    background-color: #E3E4E8;
+}
+
+.navPropsLine {
+    display: block;
+    float: left;
+    clear: both;
+}
+
+.navprop_label {
+    width: 100px;
+    float: left;
+    margin: 2px 0px 0px 5px;
+    padding: 0px;
+}
+
+.navprop_labelFree {
+    float: left;
+    margin: 2px 10px 0px 5px;
+    padding: 0px;
+}
+
+.navprop_labelShort {
+    width: 80px;
+    float: left;
+    margin: 2px 0px 0px 5px;
+    padding: 0px;
+}
+
+.navprop_data {
+    width: 100px;
+    float: left;
+    margin: 2px 15px 0px 0px;
+    padding: 0px;
+}
+
+select.navSelect {
+    font-size: 10pt;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+/* -------------------------------------------------------------------------------------------------------
+ INSERT ELEMENTS
+ -------------------------------------------------------------------------------------------------------*/
+.insertDetails {
+    margin-top: 10px;
+    clear: left;
+}
+
+.insertTextLabel {
+    margin-top: 3px;
+    clear: left;
+    margin-left: 5px;
+}
+
+select.insertSelect {
+    font-size: 10pt;
+    font-family: Verdana, Arial, sans-serif;
+    margin-right: 100px;
+    margin-left: 5px;
+    width: 80px;
+}
+
+/* -------------------------------------------------------------------------------------------------------
+ TAXONOMY NAVIGATION ELEMENTS
+ -------------------------------------------------------------------------------------------------------*/
+.taxNavPropStartNodeContainer {
+    width: 584px;
+    height: 17px;
+    border: 1px solid gray;
+    background-color: #dfe1e7;
+    clear: none;
+    float: left;
+}
+
+.taxNavPropStartNodeContainerTitle {
+    width: 584px;
+    height: 17px;
+    border: 1px solid #CED0D4;
+    clear: none;
+    float: left;
+    font-weight: bold;
+}
+
+.taxNavPropStartNodeContainerNoTopBorder {
+    border-top: 0px;
+}
+
+.taxNavPropStartNodeNameContainer {
+    margin-left: 2px;
+    CLEAR: none;
+    FLOAT: left;
+    OVERFLOW: hidden;
+    WIDTH: 162px;
+    WHITE-SPACE: nowrap;
+    HEIGHT: 17px;
+    BACKGROUND-COLOR: #dfe1e7;
+    text-overflow: ellipsis;
+}
+
+.taxNavPropStartNodePathContainer {
+    CLEAR: none;
+    FLOAT: left;
+    OVERFLOW: hidden;
+    WIDTH: 409px;
+    WHITE-SPACE: nowrap;
+    HEIGHT: 17px;
+    BACKGROUND-COLOR: #dfe1e7;
+    text-overflow: ellipsis;
+}
+
+/*firefox ellipis trick*/
+.taxNavPropStartNodeNameContainer window {
+    -moz-user-focus: normal;
+    -moz-user-select: text;
+    width: 100%;
+}
+
+.taxNavPropStartNodeNameContainer description {
+    -moz-user-focus: normal;
+    -moz-user-select: text;
+}
+
+.taxNavPropStartNodePathContainer window {
+    -moz-user-focus: normal;
+    -moz-user-select: text;
+    width: 100%;
+}
+
+.taxNavPropStartNodePathContainer description {
+    -moz-user-focus: normal;
+    -moz-user-select: text;
+}
+
+.taxNavPropStartNodeSeparater {
+    CLEAR: none;
+    FLOAT: left;
+    BORDER-LEFT: gray 1px solid;
+    WIDTH: 4px;
+    HEIGHT: 17px;
+    BACKGROUND-COLOR: #dfe1e7;
+}
+
+.taxNavPropStartNodeNameContainerTitle {
+    margin-left: 2px;
+    CLEAR: none;
+    FLOAT: left;
+    OVERFLOW: hidden;
+    WIDTH: 162px;
+    WHITE-SPACE: nowrap;
+    HEIGHT: 17px;
+}
+
+.taxNavPropStartNodePathContainerTitle {
+    CLEAR: none;
+    FLOAT: left;
+    OVERFLOW: hidden;
+    WIDTH: 409px;
+    WHITE-SPACE: nowrap;
+    HEIGHT: 17px;
+}
+
+.taxNavPropStartNodeSeparaterTitle {
+    CLEAR: none;
+    FLOAT: left;
+    BORDER-LEFT: #CED0D4 1px solid;
+    WIDTH: 4px;
+    HEIGHT: 17px;
+}
+
+/* -------------------------------------------------------------------------------------------------------
+ LINK ELEMENTS
+ -------------------------------------------------------------------------------------------------------*/
+.linkPropsDetails {
+    margin-top: 2px;
+    float: left;
+}
+
+.linkprop_label {
+    width: 100px;
+    float: left;
+    margin: 5px 0px 0px 5px;
+    padding: 0px;
+}
+
+.linkprop_data {
+    width: 365px;
+    float: left;
+    margin: 3px 15px 0px 0px;
+    padding: 0px;
+}
+
+label.linkType_label {
+    margin: 0px 10px 0px 5px;
+}
+
+label.linkTarget {
+    float: left;
+    clear: left;
+    margin: 5px 0px 0px 5px;
+    white-space: nowrap;
+}
+
+.linkprop_data .dojoComboBoxOuter {
+    margin: 3px !important;
+    padding-bottom: 3px !important;
+}
+
+.linkprop_data span.dojoComboBoxOuter.dropAreaHighlight {
+    margin: 0px !important;
+    border: 3px solid orange !important;
+}
+
+/* -------------------------------------------------------------------------------------------------------
+ EXPORTS
+ -------------------------------------------------------------------------------------------------------*/
+.exports_data {
+    float: left;
+    margin: 2px 15px 0px 0px;
+    padding: 0px;
+}
+
+.navExportsButton {
+    width: 16px;
+    float: left;
+    cursor: pointer;
+    margin: 3px 0px 0px 5px;
+    padding: 0px;
+}
+
+/* -------------------------------------------------------------------------------------------------------
+ 
+ BASIC ELEMENT
+ 
+ This set of styles is used to render a basic element, such as media, image, file etc.
+ All elements and attributes are displayed with this set of styles as the main wrapper
+ for the data. Some elements have inner tables that have more specific styles for themselves.
+ 
+ -------------------------------------------------------------------------------------------------------*/
+div.cmsField {
+    padding: 5px 0px 6px 15px;
+}
+
+table.basicElementTable {
+    width: 650px;
+}
+
+table.basicElementTable td {
+    font-family: Verdana, Arial, Sans-Serif;
+    font-size: 12px;
+}
+
+/* TOP */
+tr.basicElementTopRow {
+    height: 9px;
+}
+
+td.basicElementTopLeft {
+    background: url(../images/icons/elementblocks/lefttop.gif) no-repeat left top;
+}
+
+td.basicElementTop {
+    background: url(../images/icons/elementblocks/top2.gif) left top repeat-x;
+    width: 100%;
+    vertical-align: top;
+}
+
+td.basicElementTopRight {
+    background: url(../images/icons/elementblocks/righttop.gif) no-repeat right top;
+}
+
+/* TOP short version */
+tr.basicElementTopRowShort {
+    height: 9px;
+}
+
+td.basicElementTopLeftShort {
+    background: url(../images/icons/elementblocks/lefttopShort.gif) no-repeat left top;
+}
+
+td.basicElementTopShort {
+    background: url(../images/icons/elementblocks/topShort.gif) left top repeat-x;
+    height: 9px;
+    overflow: hidden;
+}
+
+td.basicElementTopRightShort {
+    background: url(../images/icons/elementblocks/righttopShort.gif) no-repeat right top;
+    overflow: hidden;
+}
+
+/* this span for the label is a bit special in that with the "inline-block" the padding-bottom positions the text in the correct location */
+span.basicElementLabel, div.basicElementLabel {
+    display: inline-block;
+    font-weight: bold;
+    color: #666666;
+    padding-left: 5px;
+    padding-bottom: 7px;
+    margin-bottom: 3px;
+    vertical-align: top;
+    text-shadow: 1px 1px 0px white;
+}
+
+span.basicElementIcon {
+    width: 24px;
+    height: 24px;
+}
+
+span.basicElementIcon img {
+    width: 24px;
+    height: 24px;
+    padding: 0px 0px 0px 0px;
+    margin: -1px 0px 0px 0px;
+}
+
+span.required {
+    color: orange;
+    padding-right: 5px;
+}
+
+/* MIDDLE */
+tr.basicElementMiddleRow {
+}
+
+td.basicElementMiddleLeft {
+    background: url(../images/icons/elementblocks/left.gif) left;
+    height: 10px;
+}
+
+td.basicElementMiddle {
+    width: 100%;
+    background: #CED0D4;
+    padding: 0px;
+    vertical-align: top;
+}
+
+td.basicElementMiddleHelp {
+    background: #CED0D4;
+    padding: 4px 0px 0px 5px;
+    vertical-align: top;
+}
+
+td.basicElementMiddleRight {
+    background: url(../images/icons/elementblocks/right.gif) right;
+    height: 10px;
+}
+
+/* BOTTOM */
+tr.basicElementBottomRow {
+    height: 8px;
+}
+
+td.basicElementBottomLeft {
+    background: url(../images/icons/elementblocks/leftbottom.gif) no-repeat left;
+}
+
+td.basicElementBottom {
+    background-image: url(../images/icons/elementblocks/bottom.gif);
+    width: 100%;
+}
+
+td.basicElementBottomRight {
+    background: url(../images/icons/elementblocks/rightbottom.gif) no-repeat right;
+}
+
+.cmsField fieldset {
+    padding: 3px;
+    text-align: left;
+    vertical-align: top;
+    float: left;
+    clear: none;
+}
+
+.cmsField fieldset.preview {
+    width: 165px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.editFromHtmlPreview {
+    border: 1px solid gray;
+    margin: 1px;
+    background-color: #DFE1E7;
+    height: 17px;
+    line-height: 14px;
+}
+
+html .claimPageButton {
+    display: none;
+    float: right;
+    clear: none;
+    margin-right: 10px;
+}
+
+/* CMS Field dnd styles */
+
+.tundra tr.dojoDndItemBefore .cmsField{
+    border-top: 2px solid #336699;
+	padding-top: 3px;
+}
+
+.tundra tr.dojoDndItemAfter .cmsField{
+    border-bottom: 2px solid #336699;
+	padding-bottom: 4px;
+}
+
+/* -------------------------------------------------------------------------------------------------------
+ BUTTONS
+ ------------------------------------------------------------------------------------------------------- */
+.button {
+    font-size: 10pt;
+    line-height: normal;
+}
+
+.button a {
+    float: left;
+    background: url("../images/icons/elementblocks/btn-left.gif") no-repeat left top;
+    margin: 0px 0px 0px 5px;
+    padding: 0px 0px 0px 4px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button a span {
+    float: left;
+    display: block;
+    background: url("../images/icons/elementblocks/btn-right.gif") no-repeat right top;
+    padding: 0px 10px 2px 8px;
+    color: black;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.button a:hover {
+    background-position: 0% -22px;
+}
+
+.button a:hover span {
+    background-position: 100% -22px;
+}
+
+a:hover.buttonPressed {
+    background-position: 0% -44px;
+}
+
+a:hover.buttonPressed span {
+    background-position: 100% -44px;
+}
+
+/* Small button with smaller font and less padding */
+.button.buttonSmall {
+    font-size: 6pt;
+}
+
+.button.buttonSmall a span.buttonSmallLabel {
+    font-size: 8pt;
+}
+
+.button.buttonSmall a span {
+    padding: 1px 5px 2px 1px;
+    line-height: 18px;
+}
+
+/* since the buttons are all in tables, but vary in width, set the sizes here */
+td.browseButtons {
+    width: 80px;
+    text-align: left;
+    vertical-align: top;
+}
+
+td.compButtons {
+    width: 220px;
+    text-align: left;
+    vertical-align: top;
+}
+
+td.propButtons {
+    width: 220px;
+    text-align: left;
+    vertical-align: top;
+}
+
+td.singleButtonLarge {
+    width: 100px;
+    text-align: left;
+    vertical-align: top;
+}
+
+td.genericButtons {
+    text-align: left;
+    vertical-align: top;
+}
+
+.button ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 22px;
+}
+
+.button li {
+    display: inline;
+    margin: 0px 0px 0px 0px;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* -------------------------------------------------------------------------------------------------------
+ PAGE PROPERTIES
+ -------------------------------------------------------------------------------------------------------*/
+table.basicpageprops {
+    width: 100%;
+}
+
+#pageprop_detailstable tr {
+    margin: 3px;
+}
+
+#pageprop_detailstable td {
+    padding-left: 4px;
+}
+
+div.pagePropContent span.icon {
+    width: 32px;
+    height: 32px;
+}
+
+tr.pageprops_spacer {
+    height: 8px;
+}
+
+td.pageprops_iconcolumn {
+    width: 37px;
+    text-align: left;
+}
+
+img.pageprops_icon {
+    border: 2px solid transparent;
+}
+
+img.pageprops_iconOn {
+    border: 2px dashed #0A6CE7;
+}
+
+td.pageprops_labelcolumn {
+    width: 100px;
+}
+
+td.pageprops_contentcolumn1 {
+}
+
+td.pageprops_contentcolumn2 {
+}
+
+td.pageprops_expandcolumn {
+    width: 12px;
+    vertical-align: bottom;
+}
+
+.pageProps_LingualInfoContainer {
+    margin: 10px 5px 5px 5px;
+    padding: 7px;
+    border: 1px solid #A8A8A8;
+    background: white;    
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+}
+
+.pageProps_LingualInfoContainer div {
+    margin: 2px 0px 2px 0px;
+}
+
+.pageprops_infolabel {
+    font-weight: bold;
+    color: #666666;
+    width: 100px;
+}
+
+.pageprops_detailslabel {
+    font-weight: bold;
+    color: #666666;
+    width: 160px;
+}
+
+.pageprops_detailscontent {
+    width: 150px;
+    padding-left: 5px;
+}
+
+.pageprops_detailscontentNoWidth {
+    padding-left: 5px;
+}
+
+div.pageprops_languageProp {
+    padding: 2px;
+    border: 0px;
+}
+
+div.pageprops_clonesDropTarget {
+    border: 0px;
+    padding: 2px;
+}
+
+div.pageprops_clonesDropTargetOver {
+    padding: 0px;
+    border: 2px solid gray;
+}
+
+.pageprops_toplabel {
+    font-weight: bold;
+    color: #0a6ce7;
+}
+
+.pageprops_wfcomment {
+    background-color: whitesmoke;
+    border: solid 1px gray;
+    padding: 2px;
+    margin: 0 0 0 4px;
+    width: 319px;
+    display: block;
+}
+
+.pageprops_dragicon {
+    width: 32px;
+    height: 32px;
+    cursor: move;
+}
+
+.pageprops_icon {
+    width: 32px;
+    height: 32px;
+}
+
+.lingualMapLink {
+    cursor: pointer;
+    text-decoration: underline;
+    color: blue;
+}
+
+/* -------------------------------------------------------------------------------------------------------
+ 
+ List and Group elements
+ 
+ This set of styles is used to generate the inner portion of the List and Group Elements.
+ It is also used to style the Page Properties table. It is meant to have a lighter color
+ to contrast the basic element. This table includes styles for hiding areas of the table
+ 
+ -------------------------------------------------------------------------------------------------------*/
+table.groupedItemsTable {
+    width: 650px;
+}
+
+table.groupedItemsTable td {
+    font-family: Verdana, Arial, Sans-Serif;
+    font-size: 12px;
+}
+
+html table.groupedItemsTablePadded {
+    margin: 5px 0 6px 15px;
+}
+
+/* TOP */
+tr.groupedItemsTopRow {
+    height: 6px;
+}
+
+td.groupedItemsTopLeft {
+    background: url(../images/icons/elementblocks/group-topleft.gif) no-repeat left;
+}
+
+td.groupedItemsTop {
+    background-image: url(../images/icons/elementblocks/group-top.gif);
+    width: 100%
+}
+
+td.groupedItemsTopRight {
+    background: url(../images/icons/elementblocks/group-topright.gif) no-repeat right;
+}
+
+/* MIDDLE */
+tr.groupedItemsMiddleRow {
+}
+
+td.groupedItemsMiddleLeft {
+    background: url(../images/icons/elementblocks/group-top-middleleft.gif) left bottom;
+    height: 12px;
+}
+
+td.groupedItemsMiddle {
+    background: url('../images/icons/elementblocks/group-top-middle.gif') repeat-x top;
+    background-color: #ECEFF4;
+    padding: 0px;
+    margin: 0px;
+    height: 12px;
+}
+
+td.groupedItemsMiddleRight {
+    background: url(../images/icons/elementblocks/group-top-middleright.gif) right bottom;
+    height: 12px;
+}
+
+/* CONTENT */
+td.groupedItemsContentLeft {
+    background: url(../images/icons/elementblocks/group-contentleft.gif) left;
+}
+
+td.groupedItemsContent {
+    background: #EEF2F5;
+    padding: 0px;
+    padding-top: 5px;
+    margin: 0px;
+}
+
+td.groupedItemsContentRight {
+    background: url(../images/icons/elementblocks/group-contentright.gif) right;
+}
+
+/* BOTTOM */
+tr.groupedItemsBottomRow {
+    height: 6px;
+}
+
+td.groupedItemsBottomLeft {
+    background: url(../images/icons/elementblocks/group-bottomleft.gif) no-repeat left;
+}
+
+td.groupedItemsBottom {
+    background-image: url(../images/icons/elementblocks/group-bottom.gif);
+    width: 100%;
+}
+
+td.groupedItemsBottomRight {
+    background: url(../images/icons/elementblocks/group-bottomright.gif) no-repeat right;
+}
+
+/* LIST ITEMS */
+html div.nakedListContentItem {
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+
+.listContentButtons {
+    width: 20px;
+    vertical-align: middle;
+}
+
+div.nakedListContentButtons {
+    width: 40px;
+    position: absolute;
+    left: 624px;
+}
+
+html div.nakedListItemField {
+    padding: 2px 0 2px 0;
+}
+
+.listEmptyButton {
+}
+
+.listContentButtonImage {
+    cursor: pointer;
+}
+
+.listContentButtonTopSpacer {
+    height: 15px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.listContentButtonSpacer {
+    height: 5px;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* -------------------------------------------------------------------------------------------------------
+ Name Id Listing Styles
+ -------------------------------------------------------------------------------------------------------*/
+html div.nameIdListingContainer {
+    clear: both;
+    float: left;
+    width: 100%;
+    margin: 5px 0 0 0;
+}
+
+html table.nameIdListingTable {
+    width: 100%;
+    border-color: gray;
+    border-width: 0 0 1px 1px;
+    border-style: solid
+}
+
+html table.nameIdListingTable td {
+    border-color: gray;
+    border-width: 1px 1px 0 0;
+    border-style: solid;
+    padding: 2px;
+}
+
+html table.nameIdListingTable thead tr {
+    background: url(../js/dojo13/dijit/themes/tundra/images/tabEnabled.png) left top repeat-x;
+}
+
+html table.nameIdListingTable thead td {
+    font-weight: bold;
+    text-shadow: 2 2 0 gray;
+}
+
+html table.nameIdListingTable .nameIdListing_body {
+    background: #fdfdfd;
+    cursor: pointer;
+}
+
+html table.nameIdListingTable .nameIdListing_body tr.alternate {
+    background: #F2F5F9;
+}
+
+html table.nameIdListingTable .disabled {
+    background: #DFE1E7;
+}
+
+html table.nameIdListingTable tr.before td {
+    border-top: 2px solid black;
+}
+
+html table.nameIdListingTable tr.after td {
+    border-bottom: 2px solid black;
+}
+
+/* -------------------------------------------------------------------------------------------------------
+ EXPANDABLE FIELDS
+ -------------------------------------------------------------------------------------------------------*/
+.contentHidden {
+    display: none;
+}
+
+.contentDisplayed {
+    display: block;
+}
+
+.expando {
+    float: right;
+    cursor: pointer;
+}
+
+.expando div.expandoCollapsed {
+    padding: 4px 0px 3px 0px;
+    background: url(../images/icons/elementblocks/button-tridown.gif) no-repeat right;
+}
+
+.expando div.expandoExpanded {
+    padding: 4px 0px 3px 0px;
+    background: url(../images/icons/elementblocks/button-triup.gif) no-repeat right;
+}
+
+/* -------------------------------------------------------------------------------------------------------
+ HELP TEXT TOOL TIP
+ -------------------------------------------------------------------------------------------------------*/
+.HelpToolTip {
+    padding: 2px;
+    padding-left: 22px;
+    background: url(../images/icons/default/help16.gif) no-repeat left top;
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+/* -------------------------------------------------------------------------------------------------------
+ Accordion container
+ -------------------------------------------------------------------------------------------------------*/
+html .dojoAccordionPane .label {
+    background: white url(../images/tabs/tab_repeat.gif) repeat-x scroll right top;
+    line-height: 26px;
+    text-align: left;
+    padding-left: 10px;
+    cursor: pointer;
+    border: 0px;
+}
+
+html .dojoAccordionPane .label td {
+    text-shadow: 1px 1px 1px white;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+html .dojoAccordionPane-selected .label {
+    background-position: 100% -100px;
+}
+
+html .dojoAccordionPane .accBody {
+    border: 0px;
+    border-top: 1px solid gray;
+}
+
+/* -------------------------------------------------------------------------------------------------------
+ Task selector
+ -------------------------------------------------------------------------------------------------------*/
+.tabSelectorItem {
+    padding: 3px 3px 3px 20px;
+    cursor: pointer;
+    background-color: transparent;
+    color: black;
+}
+
+.tabSelectorItemOn td {
+    background-color: gray;
+    color: white;
+}
+
+.tabSelectorItemOver td {
+    background-color: #bbbbbb;
+    color: black;
+}
+
+.tabSelectorItem .tabSelectorSubContentContainer {
+    margin: 1px 0px 1px 0px;
+    border: 1px solid #bbbbbb;
+    padding: 5px;
+    color: black;
+    background-color: white;
+}
+
+.tabSelectorItem .tabSelectorSubContentContainerHidden {
+    display: none;
+}
+
+/* -------------------------------------------------------------------------------------------------------
+ PREVIEW PAGE
+ -------------------------------------------------------------------------------------------------------*/
+.previewControls {
+    padding: 5px;
+    background-color: #CFD0D4;
+}
+
+#preview {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12px;
+}
+
+#preview select {
+    width: 180px;
+}
+
+#preview td {
+    padding: 3px 0px 3px 5px;
+}
+
+#preview .inputText {
+    font-size: 12px;
+    font-family: Verdana, Arial, sans-serif;
+    overflow: hidden;
+    border: solid 1px gray;
+    padding: 3px;
+    height: 1.8em;
+    width: 100%;
+}
+
+#preview .labelText {
+    width: 100px;
+	padding-top: 6px;
+}
+
+#preview .control {
+    width: 210px;
+}
+
+#previewTab {
+    background-color: #FFFFFF;
+}
+
+/* -------------------------------------------------------------------------------------------------------
+ XML PREVIEW
+ -------------------------------------------------------------------------------------------------------*/
+div.xmlPreview {
+    padding: 4px;
+}
+
+.xmlPreview .tag {
+    color: blue;
+    cursor: pointer;
+}
+
+.xmlPreview .name {
+    color: #d22222;
+    cursor: pointer;
+}
+
+.xmlPreview .toggle {
+    width: 10px;
+    display: block;
+    float: left;
+    clear: none;
+    cursor: pointer;
+}
+
+.xmlPreview .line, .lineEnd {
+    text-indent: -20;
+    margin-left: 30px;
+}
+
+.xmlPreview .container {
+    text-indent: 0;
+}
+
+.xmlPreview .comment {
+    color: #999999;
+}
+
+.xmlPreview .menuItem {
+    display: block;
+    padding: 2px;
+    margin-left: 5px;
+    padding-left: 21px;
+    padding-right: 5px;
+    font-size: 11px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+}
+
+/* -------------------------------------------------------------------------------------------------------
+ History Tab
+ -------------------------------------------------------------------------------------------------------*/
+#historyTab {
+    background-color: #ECEFF4;
+}
+
+#historyTab .versionRevert {
+    float: right;
+    cursor: pointer;
+}
+
+/* -------------------------------------------------------------------------------------------------------
+ Taxonomy Tab
+ -------------------------------------------------------------------------------------------------------*/
+#taxonomyTab {
+    background-color: #ECEFF4;
+}
+
+/* -------------------------------------------------------------------------------------------------------
+ Date time picker in dojo 1.3.
+ -------------------------------------------------------------------------------------------------------*/
+html .tundra .igxDateTimeTextBoxOuter {
+    background: transparent !important;
+    border: 0px !important;
+    width: 193px;
+    float: left;
+    clear: none;
+}
+
+html .tundra .igxDateTimeTextBox {
+    background: #FFFFFF;
+    border: 1px solid gray;
+    float: left;
+    clear: none;
+    margin-right: 5px;
+}
+
+html .tundra .igxDateTimeTextBox input {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12px;
+    margin: 0 0 0 2px;
+    padding: 1px 0 1px 2px;
+    text-align: left;
+}
+
+/* -------------------------------------------------------------------------------------------------------
+ Dragging Selector.
+ -------------------------------------------------------------------------------------------------------*/
+div.dragSelectorBorder {
+    border: dotted 1px #3064b7;
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+    width: 2px;
+    height: 2px;
+    background-color: transparent;
+    z-index: 9999;
+}
+
+div.dragSelectorBorder div.dragSelectorFiller {
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    background-color: #3064b7;
+    opacity: 0.15;
+    clear: both;
+    float: left;
+}
+
+/* -------------------------------------------------------------------------------------------------------
+ General Admin Styles
+ -------------------------------------------------------------------------------------------------------*/
+.AdminBackground {
+    padding: 10px;
+    background-color:#F1F3F5;
+    overflow: hidden;
+}
+
+.adminContainer {
+    padding: 10px;
+    border: 1px solid #CED0D4;
+    overflow: hidden;
+    background-color: white;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;    
+}
+
+html .adminToplessContainer {
+    padding: 10px;
+    border: 1px solid #CED0D4;
+    background-color: white;
+    overflow: hidden;
+    -moz-border-radius-bottomleft: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;    
+}
+
+html .adminToplessContainerSpacer {
+    border-left: 1px solid #CED0D4;
+    border-right: 1px solid #CED0D4;
+}
+
+html .tundra .dijitTab {
+    border: 1px solid #CED0D4;
+    text-shadow: 1px 1px 0px white;
+}
+
+/* checked tab*/
+html .tundra .dijitTabChecked {
+    border-color: #CED0D4;
+}
+
+/* -------------------------------------------------------------------------------------------------------
+ User Manager Styles
+ -------------------------------------------------------------------------------------------------------*/
+html .collapsibleToolbox, html .userManagerMain, html .userManagerMain .ummBorderedList {
+    border: 1px solid #5A5A5A !important;
+    overflow: hidden;
+}
+
+html .clptitle {
+    background-color: #858585;
+    height: 40px;
+    padding-right: 10px;
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+
+html .clptitleVertical {
+    width: 40px;
+    height: 150px;
+    float: right;
+    padding-right: 0px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+html .clptitleText {
+    float: right;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 5px;
+    margin-right: 16px;
+    text-shadow: 1px 1px black;
+}
+
+html .clptitleVertical .clptitleText {
+    writing-mode: tb-rl;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    float: none;
+    margin-right: 0px;
+    margin-top: 16px;
+}
+
+html .clptitleVerticalCJK .clptitleText {
+    float: none;
+    margin-right: 0px;
+    margin-top: 16px;
+}
+
+html .clpInstructionsContainer {
+    display: block;
+    margin: 5px;
+}
+
+html .collapsibleToolbox .clpSearchContainer {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #5A5A5A;
+}
+
+html .collapsibleToolbox .clpListingContainer {
+    margin: 5px;
+    border: 1px solid #5A5A5A;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+html .collapsibleToolbox .clpListingContainerOver {
+    margin: 4px;
+    border: 2px solid black;
+}
+
+html .collapsibleToolbox .clpLoaderImage {
+    display: block;
+    margin: 10px;
+}
+
+html .collapsibleToolbox .trashCan {
+    height: 48px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 6px;
+}
+
+html .ummTitle {
+    background-color: #858585;
+    height: 40px;
+    padding-left: 10px;
+    background-position: left top;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+html .ummTitleText {
+    float: left;
+    color: white;
+    font-size: 22px;
+    font-weight: bolder;
+    padding: 5px;
+    margin-left: 24px;
+    text-shadow: 1px 1px black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+html .ummToolbar {
+    float: right;
+    padding: 0px;
+    background: #efefef;
+    white-space: nowrap;
+}
+
+html .ummButtons {
+    padding: 4px 4px 4px 6px;
+    margin-left: -10px; /*to make sure the bottom left curve shows*/
+    background: #efefef;
+    -moz-border-radius-bottomleft: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    float: right;
+    white-space: nowrap;
+}
+
+html .ummToolbar input {
+    font-size: 11px;
+    margin: 0px 3px 0px 3px;
+    padding: 0 4px 0 4px;
+}
+
+html .ummToolbar2 {
+    float: right;
+    padding: 6px 4px 5px 6px;
+    background: #d0d0d0;
+    -moz-border-radius-bottomleft: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    white-space: nowrap;
+}
+
+html .itemPaneListing {
+    margin: 3px 2px 2px 2px;
+    border: 0px;
+}
+
+html .associateItemDropTargetOver {
+    margin: 1px 0px 0px 0px;
+    border: 2px solid #5A5A5A;
+}
+
+html .associateItemDragTool {
+    padding: 5px;
+}
+
+html .associateItemDragToolOn {
+    background: #959595;
+}
+
+html .userGroupEditor {
+    padding: 5px 0px 0px 0px;
+    overflow: auto;
+}
+
+html .userGroupEditor .groupLabel {
+    padding: 5px 7px 7px 5px;
+    background: #a0a0a0;
+    font-size: 14px;
+    font-weight: bold;    
+    float: left;
+    color: white;
+    clear: both;  
+    text-shadow: 1px 1px black;  
+    -moz-border-radius-bottomright: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+html .userGroupEditor .permissionsContainer {
+    clear: both;
+    display: block;
+    margin: 5px 5px 5px 5px;
+    border: 1px solid #5A5A5A;
+    -moz-border-radius-bottomright: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+html .userGroupEditor .permissionsBox {
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 5px;
+    clear: both;
+}
+
+html .userGroupEditor .permissionsBox .permissionGroupContainer {
+    margin-bottom: 5px;
+}
+
+html .imgButton {
+    margin: 3px;
+    display: block;
+    float: right;
+    clear: none;
+    cursor: pointer;
+}
+
+html .lanPickLocaleEntry {
+    margin: 5px 0px;
+    padding: 5px;
+    border: 1px solid #5a5a5a;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+}
+
+html .lanPickLocaleEntryNoBorder {
+    border: 0px;
+    margin: 6px 1px;
+    padding: 5px;
+    clear: both;
+}
+
+html .validationError {
+    color: red;
+    font-weight: bold;
+    display: none;
+}
+
+html .validationErrorShow {
+    display: block;
+}
+
+/* -------------------------------------------------------------------------------------------------------
+ AD Import Dialog
+ -------------------------------------------------------------------------------------------------------*/
+html .groupContainer {
+    margin: 5px;
+}
+
+/* -------------------------------------------------------------------------------------------------------
+ DOJO 1.3 ComboBox reskin to match the 0.43 ComboBox IGX skin
+ -------------------------------------------------------------------------------------------------------*/
+html .tundra .dijitComboBox .dijitButtonNode, .tundra .dijitSpinner .dijitButtonNode {
+    border-width: 0 0 0 0;
+    background: none transparent;
+    padding: 0px;
+}
+
+html .tundra .dijitComboBox .dijitArrowButton .dijitArrowButtonInner {
+    background-attachment: scroll;
+    background-image: url("../js/igx/widget/templates/images/comboDownArrow.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-size: inherit;
+    height: 16px;
+    width: 16px;
+    margin: 0 1px 1px 1px;
+}
+
+html .tundra .dijitComboBoxDisabled .dijitArrowButton .dijitArrowButtonInner {
+    background-image: url("../js/igx/widget/templates/images/comboDownArrowDisabled.png");
+}
+
+html .tundra .dijitComboBoxHover .dijitArrowButton .dijitArrowButtonInner {
+    background-attachment: scroll;
+    background-image: url("../js/igx/widget/templates/images/comboDownArrowOn.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-size: inherit;
+    height: 16px;
+    width: 16px;
+    margin: 0px;
+    border: 1px inset #AFAFAF;
+    border-top: 0px;
+}
+
+html .tundra .dijitTextBox, .tundra .dijitComboBox, .tundra .dijitSpinner, .tundra .dijitTextArea, .tundra .dijitInlineEditor input {
+    background: white;
+    border: 1px solid gray;
+}
+
+html .tundra .dijitMenuPassive .dijitMenuItemHover, html .tundra .dijitMenuItemSelected, html .dojoComboBoxItemHighlight {
+    background: #585858;
+}
+
+html .tundra .dijitMenu {
+    border: 1px solid gray;
+}
+
+html .tundra .dijitMenu .dijitWhiteMenuItem, html .tundra .dijitMenu .dijitWhiteMenuItem td {
+    background-color: white;
+}
+
+html .tundra .dijitMenu .dijitWhiteMenuItem .dijitMenuItemHover, html .tundra .dijitMenu .dijitWhiteMenuItem .dijitMenuItemSelected {
+    background-color: #3559ac;
+    color: #fff;
+}
+
+/* -------------------------------------------------------------------------------------------------------
+ PCR Manager Styles
+ -------------------------------------------------------------------------------------------------------*/
+html .advancedFieldSet {
+    padding: 4px;
+    margin: 5px;
+    clear: both;
+    border: 1px solid gray;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+html .userGroupListContainer {
+    border: 1px solid gray;
+    margin: 5px;
+    padding: 0px;
+}
+
+html .userGroupListContainer .userGroupListToolbar {
+    padding: 5px;
+}
+
+html .userGroupListContainer .userGroupList {
+    border-top: 1px solid gray;
+    margin: 0px !important;
+}
+
+html .parentPageList {
+    border: 1px solid gray;
+    margin: 5px;
+}
+
+html .parentPageListOver {
+    border: 2px solid black;
+    margin: 4px;
+}
+
+html .parentPageToolbar {
+    padding: 0 5px 0 5px;
+}
+
+html .pcrParentsTrashCan {
+    margin: 2px;
+    cursor: default;
+    vertical-align: middle;
+}
+
+html .pcrParentsTrashCanOver {
+    margin: 0px;
+    border: 2px solid black;
+}
+
+html .flexTableV2 div.flexTableErrorRow {
+    background-color: #fecfd3;
+}
+
+html .addParentPagePanel {
+    position: absolute;
+    left: -9999px;
+    top: 0px;
+    background-color: white;
+    padding: 6px;
+    border: 1px solid gray;
+    -moz-border-radius-bottomleft: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* -------------------------------------------------------------------------------------------------------
+ publish manager styles
+ -------------------------------------------------------------------------------------------------------*/
+.dndTitlePaneListingContainer {
+    margin: 5px;
+    border: 1px solid gray;
+}
+
+.dndTitlePaneListingContainer div.title {
+    padding: 5px 10px 7px 5px;
+    -moz-border-radius-bottomright: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: #a0a0a0;
+    font-size: 12px;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+    float: left;
+    color: white;
+    clear: both;
+}
+
+.dndTitlePaneListingContainer .contentContainer {
+    padding: 5px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+}
+
+.brandItemField {
+    float: left;
+    clear: none;
+    padding: 0px;
+    margin: 5px;
+}
+
+.brandItemField .brandItemFieldInput {
+    width: 180px;
+}
+
+textarea.description {
+    font-family: Verdana, Arial, sans-serif;
+    text-align: left;
+    font-size: 12px;
+}
+
+html div.devicesListingContainer {
+    padding: 5px;
+	margin: 10px 0 0 0;
+    border: 1px solid #BFBFBF;
+}
+
+span.deviceInfoFieldLabel {
+    display: inline-block;
+    font-weight: bold;
+    width: 160px;
+}
+
+/* -------------------------------------------------------------------------------------------------------
+ publish monitor styles
+ -------------------------------------------------------------------------------------------------------*/
+.publishItem {
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+.pendingListTitle {
+    font-weight: bold;
+    margin: 5px 5px 5px 0px;
+}
+
+.pendingPublishesListContainer {
+    border: 1px solid gray;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.publishItem .dijitTitlePaneContentOuter {
+    border: 1px solid #b0b0b0;
+    border-top: 0px;
+}
+
+.publishItemTitle {
+    border: 0px;
+    padding: 5px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-size: 12px;
+    background-color: #345FA8;
+    background: -moz-linear-gradient(left,  #345FA8,  #74A2EB);	    
+	background: -webkit-gradient(linear, left top, right top, from(#345FA8), to(#74A2EB)); 	
+	-moz-border-radius-topleft: 7px;
+    -moz-border-radius-topright: 7px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    -webkit-border-top-left-radius: 7px;
+    -webkit-border-top-right-radius: 7px;
+}
+
+.replicationItemTitle {
+    background-color: #345FA8;
+    background: -moz-linear-gradient(left,  #2e602b,  #498f3f);	    
+	background: -webkit-gradient(linear, left top, right top, from(#2e602b), to(#498f3f)); 		
+}
+
+.publishItemTitle img.dijitArrowNode {
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+.publishItemTitle img.deleteButton {
+	float: right;
+	clear: right;
+	cursor: pointer;
+	margin-top: -3px;
+}
+
+.publishItemDisabled .publishItemTitle, .publishItemDisabled .replicationItemTitle {
+	background-color: #9d9d9d;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	border-radius: 7px;
+}
+
+
+.publishItemTitle span.titleNode {
+	font-weight: bolder;
+	font-size: 14px;
+}
+
+
+.pendingPublishesListContainer .publishItemTitle span.titleNode{
+	font-weight: bold;
+	font-size: 13px;
+}
+
+.pendingPublishesListContainer .publishDndItemWrapper {
+	padding: 5px 0 5px 0;
+}
+
+.pendingPublishesListContainer .publishDndItemWrapper .publishItem {
+	margin: 0px;
+}
+
+.publishItem .staticInformation {
+	line-height: 20px;
+}
+
+.publishItem .staticInformation td.label {
+	font-weight: bold;
+	width: 150px;
+}
+
+.publishItem .statusContainer {
+	border: 1px solid #b0b0b0;
+	margin-top: 5px;
+	padding: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;	
+    border-radius: 5px;	
+}
+
+.permonContainer {
+	width: 200px;
+	height: 200px;
+}
+
+.permonPoint {
+	background-color: black;
+	border: 0px;
+	position: absolute;
+}
+
+.pendingSummaryContainer {
+	margin:0 7px 5px 7px;
+}
+
+label.pageIdsToggleLabel {
+	display:inline-block;;
+	margin: 10px 5px 5px 5px;
+}
+
+label.pageIdsToggleLabel input {
+	display:inline-block;
+	vertical-align:middle;
+}
+
+.completedPublishItemTitle {
+    border: 0px;
+    padding: 7px;
+    color: white;
+    font-size: 12px;
+    background-color: #515368;
+    background: -moz-linear-gradient(left,  #515368,  #888aa2);	    
+	background: -webkit-gradient(linear, left top, right top, from(#515368), to(#888aa2)); 
+	margin: 0 0 4px 0;			
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	border-radius: 7px;
+}
+
+.completedPublishItemTitle .titleNode {
+	width: 180px;
+	font-size: 13px;
+	font-weight: bold;
+    text-shadow: 1px 1px 1px black;	
+	float:left;
+	clear:left;
+}
+
+.completedPublishItemTitle p {
+	font-size: 11px;
+	line-height: 14px;
+	margin: 0px;	
+}
+
+
+.pubProgressBar {
+    margin: 0;
+}
+
+.publishProgressBarTile {
+    bottom: 0;
+    height: auto;
+    left: 0;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;	
+}
+
+/* -------------------------------------------------------------------------------------------------------
+ Reports styles
+ -------------------------------------------------------------------------------------------------------*/
+
+.reportsManager {
+	overflow:hidden;
+}
+
+html .tundra .reportsManager .dijitTabPaneWrapper {
+	border: 1px solid #CED0D4;
+	background-color: white;
+    -moz-border-radius-bottomleft: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -webkit-border-bottom-right-radius: 5px;	
+    border-bottom-right-radius: 5px;
+	border-top: 0px;
+}
+
+.parametersContainer {
+	padding: 5px;
+}
+
+.reportsOverview {
+	padding:15px;
+}
+
+.overviewTitle {
+	font-size: 20px;
+	font-weight: bolder;
+	text-shadow: 1px 1px 1px #ececec;
+}
+
+.gridListingTitle {
+	font-size: 13px;
+	font-weight: bold;	
+	margin: 10px 0 5px 0;
+}
+
+.reportLink {
+	text-decoration: underline;
+	cursor:pointer;
+}
+
+.reportViewTitleBar {
+	background-color: #858585;
+	padding: 10px;
+	margin: 2px;
+}
+
+.reportViewTitleBar .titleNode {
+	color: white;
+	font-size: 16px;
+	text-shadow: 2px 2px 1px black;
+	font-weight: bold;
+	vertical-align:middle;
+}
+
+.reportViewTitleBar .buttonContainer {
+	float:right;
+	clear:right;
+	vertical-align: middle;
+}
+
+img.imageButton {
+	cursor: pointer;	
+}
+
+.reportViewTitleBar .buttonContainer img.imageButton {
+	margin-left:5px;
+}
+
+.resultsTableContainer {
+	padding:10px;
+	overflow: hidden;
+}
+
+.pageXID {
+	text-decoration: underline;
+	cursor: pointer;
+	font-weight: normal;
+}
+
+.pageXID:hover {
+	font-weight: bold;
+}
+
+.parameterLabel {
+	font-weight: bold;
+	text-align:right;
+}
+
+html .tundra .nameIdListing_body tr.dojoDndItemBefore td {
+	border-top: 2px solid #336699;
+}
+
+html .tundra .nameIdListing_body tr.dojoDndItemAfter td {
+	border-bottom: 2px solid #336699;
+}
+
+.tableRowDragHandle {
+	width:12px;
+	height:16px;
+	cursor:pointer;
+	background: url("../images/icons/dragHandle.png") left top no-repeat;
+}
+
+.disabledAttribute {
+	color: #6D6D6D;
+}
+
+.choicesContainer {
+	border: 1px solid gray;
+	padding: 10px;
+	clear:both;
+}
+
+.keySetColumnSelected {
+	background: url("../images/icons/key_icon.gif") center 4px no-repeat;
+}
+
+.involvedDocumentItem {
+	float:left;
+	clear:none;
+	margin: 5px 20px 5px 5px;
+}
+
+.involvedDocCheckBox {
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+/* -------------------------------------------------------------------------------------------------------
+ dojo 1.3 popup menu
+ -------------------------------------------------------------------------------------------------------*/
+.igxMenuTitle {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border-color: -moz-use-text-color -moz-use-text-color gray;
+    border-style: none none solid;
+    border-width: 0 0 1px;
+}
+
+html .igxMenuTitle .dijitMenuItemLabel {
+    font-weight: bold;
+    color: black;
+}
+
+/* -------------------------------------------------------------------------------------------------------
+ Misc.
+ -------------------------------------------------------------------------------------------------------*/
+div.loadingMask {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: -999px;
+    top: 0px;
+    background-image: url(../images/ajax-loader.gif);
+}
+
+.fileBrowser .dojoTree {
+    overflow: visible;
+}
+
+.dialogResizer {
+    background: url(../images/icons/filebrowser/process/cornerResizer.png) left top no-repeat;
+    float: right;
+    clear: both;
+    cursor: nw-resize;
+    width: 13px;
+    height: 13px;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+html .defaultSkin .mceIframeContainer {
+    border: 1px solid gray;
+    border-bottom: 0px;
+}
+
+html .defaultSkin table.mceLayout tr.mceLast td {
+    border: 1px solid gray;
+    border-top: 0px;
+}
+
+.igxTitlePaneButtonContainer {
+    float: right;
+    display: block;
+    width: 35%;
+}
+
+.igxTitlePaneButtonDisabled {
+    color: #747170;
+}
+
+.igxTitlePaneButton {
+    float: right;
+    display: block;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.workflowTitlepaneBorder {
+    margin-bottom: 4px;
+    margin-left: 5px;
+}
+
+.igxtitlepanetext {
+    float: left;
+    width: 60%;
+}
+
+.ribbonButton {
+	padding: 5px;
+	border: 0px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;	
+    border-radius: 5px;	
+}
+
+.ribbonButtonHover {
+	border: 1px outset white;
+	padding: 4px;
+}
+
+.ribbonButtonDown {
+	border: 1px inset white;
+	padding: 4px;	
+}
+
+.ribbonButtonContents {
+    cursor: pointer;
+    text-align: center;
+}
+
+.ribbonButtonIcon {
+	vertical-align: middle;
+	margin-right: 4px;
+}
+
+.ribbonButtonCaption {
+	vertical-align: middle;
+	display: inline-block;
+	font-size:12px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.ribbonToolbar {
+    background: url("../images/tabs/ice/toolbarBackground.png") repeat-x scroll left bottom #E1E5E8;
+    width: 100%;
+}
+
+.ribbonContainer {
+    float: left;
+    margin-right: 5px;
+}
+
+.ribbonObject {
+    float: left;
+    margin-right: 5px;
+}
+
+.ribbonImgDivider {
+    float: left;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.ribbonTextContainer {
+    margin: 2px
+}
+
+.textDivider {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.innerRibbonContainer {
+    float: left;
+}
+
+.ribbonButtonDisabled {
+    cursor: default !important;
+    color: gray !important;
+}
+
+.SiteSearcherFixValue .valueInput {
+    margin-left: 4px;
+}
+
+.SiteSearcherFixValue {
+    margin: 10px;
+	font-size: 12px;
+}
+
+.SiteSearcherFixValue .valueHolder {
+    margin-left: 4px;
+    float: left;
+}
+
+.markForPubTable {
+    border: 1px solid gray;
+    border-collapse: collapse;
+    background-color: white;
+    margin-top: 4px;
+    font-size: 11px;
+}
+
+.markForPubTable th, .markForPubTable td {
+    padding: 3px;
+}
+
+.markForPubTable th {
+    text-shadow: 1px 1px 1px gray;
+}
+
+.markForPubTable thead tr.head {
+    background: url("../images/ft-headup.gif") left top repeat-x;
+}
+
+.markForPubTable tr.disabledPubTarget {
+	background-color: #dfdfdf;
+}
+
+select.pubTargetSelector {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 11px;
+}
+
+html .tundra .gridDisabled .dojoxGridRow {
+	background-color: #e4e4e4;
+} 
+
+html .tundra .gridDisabled .dojoxGridRowOdd {
+	background-color: #d8d8d8;
+} 
+
+html .tundra .gridDisabled .dojoxGridScrollbox {
+	background-color: #e3e3e3;
+}
+
+html .tundra .gridDisabled .dojoxGridRowSelected {
+    background-color: #AEC7E3;
+}
+
+fieldset.optionsContainer, div.optionsContainer {
+	border: 1px groove gray;
+	margin:5px;
+	padding:5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;	
+    border-radius: 5px;	
+}
+
+fieldset.optionsContainer legend {
+	font-weight: bold;
+}
+
+html .siteSearch {
+	background-color: #F1F3F5;
+}
+
+
+html .siteSearchAdvanced {
+    padding: 4px;
+    margin: 5px;
+    clear: both;
+    border: 1px solid #bbbbbb;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;	
+}
+
+html .tundra div.dijitTab {
+    -moz-border-radius-topleft: 5px;
+    border-top-left-radius: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-right-radius: 5px;
+    -webkit-border-top-right-radius: 5px;	
+}
+
+html .tundra .mce_backcolor, html .tundra .mce_forecolor{
+	z-index: 499 !important;
+}
+
+div.fieldDummy {   
+    border: 1px solid gray;
+    background: #888888;
+    opacity: 0.7;
+    margin-left: 15px;
+    margin-top: 22px;
+    margin-right: 35px;
+    margin-bottom: 7px;
+    -moz-border-radius: 5px; 	   
+    -webkit-border-radius: 5px;   
+    border-radius: 5px;  
+}
