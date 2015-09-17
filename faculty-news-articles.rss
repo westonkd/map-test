@@ -1,0 +1,69 @@
+
+
+
+
+
+<rss version="2.0"  xmlns:rss="http://www.rssboard.org/rss-specification">
+    <title>BYU-Idaho Top Picks</title>
+    <link>http://www.byui.edu</link>
+    <description></description>
+    <language>en-us</language>
+
+<item>
+            
+        </item>
+<item>
+            <rss:title>&quot;It&#39;s Not Harry Potter&quot; - Insight from the Web</rss:title>
+        <rss:link rel="stylesheet">http://www.byui.edu/x95358</rss:link>
+        <rss:description>
+            <rss:img alt="Teaching Students to Read Journal Articles" src="http://www.byui.edu/instructional-development/News/stories/03-2014/070925 Study-121_resized.jpg" width="80" height="80" xmlns:content="http://purl.org/rss/1.0/modules/content/"/>
+            Teaching Students to Read Journal Articles
+        </rss:description>
+        <rss:entry>
+            <rss:link rel="enclosure" type="image/jpeg" href="http://www.byui.edu/instructional-development/News/stories/03-2014/070925 Study-121_resized.jpg"/>
+        </rss:entry>
+        <rss:pubDate>
+            Tue, 8 Apr 2014 00:00:00 -0600
+        </rss:pubDate>
+        <rss:guid>
+            x95358
+        </rss:guid>
+
+        </item>
+<item>
+            <rss:title>Faculty-Written Robotics Book Being Published</rss:title>
+        <rss:link rel="stylesheet">http://www.byui.edu/x90540</rss:link>
+        <rss:description>
+            <rss:img alt="A book about creating robots, written by Richard Grimmett, is being published by Packt Publishing." src="http://www.byui.edu/instructional-development/News/stories/10-2013/beaglebone thumb.jpg" width="80" height="80" xmlns:content="http://purl.org/rss/1.0/modules/content/"/>
+            A book about creating robots, written by Richard Grimmett, is being published by Packt Publishing.
+        </rss:description>
+        <rss:entry>
+            <rss:link rel="enclosure" type="image/jpeg" href="http://www.byui.edu/instructional-development/News/stories/10-2013/beaglebone thumb.jpg"/>
+        </rss:entry>
+        <rss:pubDate>
+            Mon, 7 Oct 2013 00:00:00 -0600
+        </rss:pubDate>
+        <rss:guid>
+            x90540
+        </rss:guid>
+
+        </item>
+<item>
+            <rss:title>A Collaborative Approach to Online Learning – Part 1</rss:title>
+        <rss:link rel="stylesheet">http://www.byui.edu/x44209</rss:link>
+        <rss:description>
+            <rss:img alt="Part one of a three part series, which focuses on the campus faculty’s role in the collaborative approach to learning online." src="http://www.byui.edu/instructional-development/News/stories/07-2012/ComputerIT-071210.jpg" width="80" height="80" xmlns:content="http://purl.org/rss/1.0/modules/content/"/>
+            Part one of a three part series, which focuses on the campus faculty’s role in the collaborative approach to learning online.
+        </rss:description>
+        <rss:entry>
+            <rss:link rel="enclosure" type="image/jpeg" href="http://www.byui.edu/instructional-development/News/stories/07-2012/ComputerIT-071210.jpg"/>
+        </rss:entry>
+        <rss:pubDate>
+            Fri, 17 Aug 2012 00:00:00 -0600
+        </rss:pubDate>
+        <rss:guid>
+            x44209
+        </rss:guid>
+
+        </item>
+</rss>
